@@ -64229,7 +64229,7 @@ i=t.w
 s=A.b1(a,k,i).w
 if(A.b1(a,k,i).w.a.a>600)i=A.dw("Made with <3 by 3_n using Flutter  |  Hosted on GitHub Pages",!0,A.di().$1$textStyle(B.ia),k)
 else{i=t.D
-i=A.hA(A.b([A.dw("Made with <3 by 3_n",!0,A.di().$1$textStyle(B.ia),k),A.vP(A.b([A.dw("w/ ",!0,A.di().$1$textStyle(B.ia),k),B.zT],i),B.aG,B.W,B.bb)],i),B.a1,B.W)}r=A.bx(a).gbm().ax
+i=A.hA(A.b([A.vP(A.b([A.dw("Made with <3 by 3_n w/ ",!0,A.di().$1$textStyle(B.ia),k),B.zT],i),B.aG,B.W,B.bb),A.dw("Hosted on GitHub Pages",!0,A.di().$1$textStyle(B.ia),k)],i),B.a1,B.W)}r=A.bx(a).gbm().ax
 q=r.cx
 r=A.u3(k,A.CM(B.Aj,q==null?r.z:q),new A.U2(),k,"Email")
 q=A.bx(a).gbm().ax
