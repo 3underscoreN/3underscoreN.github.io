@@ -37097,7 +37097,7 @@ XZ(){if(this.c<=0)this.gHh().fc()},
 gHh(){var s=this,r=s.aF$
 if(r===$){$.Bj()
 r!==$&&A.af()
-r=s.aF$=new A.aba(A.x(t.S,t.GG),B.q,new A.xb(),s.gXK(),s.gXY(),B.zL)}return r}}
+r=s.aF$=new A.aba(A.x(t.S,t.GG),B.q,new A.xb(),s.gXK(),s.gXY(),B.zM)}return r}}
 A.Vz.prototype={
 $0(){var s=null
 return A.b([A.hI("Event",this.a,!0,B.aA,s,s,s,B.ai,!1,!0,!0,B.aX,s,t.qL)],t.D)},
@@ -37913,7 +37913,7 @@ r=a.gbn()
 q=a.gbD()
 p=a.gdi()
 o=new A.JC()
-A.bW(B.zQ,o.gZJ())
+A.bW(B.zR,o.gZJ())
 n=new A.r8(r,s,q,p,o)
 m.z.n(0,a.gbn(),n)
 o=a.gbu()
@@ -40069,7 +40069,7 @@ return q}}
 A.uK.prototype={
 oJ(){var s=this.ch
 s===$&&A.a()
-s.e=B.zM
+s.e=B.zN
 s.ca()
 s=this.cx
 s===$&&A.a()
@@ -40305,7 +40305,7 @@ s=s!=null&&s.a!==0}else s=!0
 return s},
 Os(a){switch(a.a){case 0:return B.a6
 case 1:case 2:this.a.toString
-return B.zR}},
+return B.zS}},
 BP(a,b,c){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=i.r,f=g.j(0,a),e=a.a
 switch(e){case 0:i.gcj().dt(B.a3,c)
 break
@@ -41132,7 +41132,7 @@ af(){return new A.Jk(null,null)}}
 A.Jk.prototype={
 ap(){var s,r=this
 r.aK()
-s=A.cn(null,B.zO,null,null,r)
+s=A.cn(null,B.zP,null,null,r)
 r.d=s
 r.a.toString
 s.Bw()},
@@ -41666,7 +41666,7 @@ s.aH$=null
 s.az()}}
 A.H6.prototype={
 J(a){var s=this,r=null
-if(A.at(a).w===B.ae)return new A.oy(8,B.dn,s.c,s.d,!1,B.Hf,3,r,B.zN,B.zJ,A.B5(),r,r,3,r)
+if(A.at(a).w===B.ae)return new A.oy(8,B.dn,s.c,s.d,!1,B.Hf,3,r,B.zO,B.zK,A.B5(),r,r,3,r)
 return new A.qN(s.c,s.d,r,r,r,r,B.aZ,B.cV,A.B5(),r,r,0,r)}}
 A.qN.prototype={
 af(){var s=null
@@ -42470,7 +42470,7 @@ return!0},
 gxK(){var s=this.a.c
 return s==null?null.aac():s},
 gjj(){var s,r=this,q=r.w
-if(q==null){q=A.cn(null,B.zK,B.h_,null,r)
+if(q==null){q=A.cn(null,B.zL,B.h_,null,r)
 q.bl()
 s=q.bH$
 s.b=!0
@@ -65638,7 +65638,7 @@ $.a3.R8$.push(new A.a9r(this))},
 J(a){var s=null,r=A.at(a),q=$.ab().a3A(5,5,B.dz)
 return new A.wu(!0,new A.FI(new A.Cq(A.asr($.arZ(),q),s),B.Jo,s),new A.wG(4,new A.a9q(),$.ail(),s,$.arU(),s,s),r.ax.k2,s)}}
 A.a9r.prototype={
-$1(a){var s=A.asl("Welcome to 3_n's personal website!\nThis website is still under heavy development >_<\nSorry for the mess! T_T",B.cP,B.aZ,B.zv,B.zS,B.wd),r=this.a.c
+$1(a){var s=A.asl("Welcome to the old verson of my website! Please note that this part of the website is no longer being updated.",B.cP,B.aZ,B.zv,B.zJ,B.wd),r=this.a.c
 r.toString
 s.vi(r)},
 $S:5}
@@ -69680,7 +69680,7 @@ B.wa=new A.c5(-1,0)
 B.wb=new A.c5(-1,-1)
 B.iM=new A.rC(0,A.a8("rC<F>"))
 B.wc=new A.By(null)
-B.wd=new A.Qz(0,"info")
+B.wd=new A.Qz(3,"warning")
 B.dH=new A.jS(0,"playing")
 B.iN=new A.jS(1,"pausedByUser")
 B.iO=new A.jS(2,"pausedBetweenAnimations")
@@ -70254,25 +70254,25 @@ B.zI=new A.tV(null,null,null)
 B.q=new A.az(0)
 B.aY=new A.az(1e5)
 B.cS=new A.az(1e6)
-B.zJ=new A.az(12e5)
-B.zK=new A.az(15e4)
+B.zJ=new A.az(1e7)
+B.zK=new A.az(12e5)
+B.zL=new A.az(15e4)
 B.k0=new A.az(15e5)
-B.zL=new A.az(16667)
+B.zM=new A.az(16667)
 B.k1=new A.az(167e3)
 B.a6=new A.az(2e5)
 B.cT=new A.az(2e6)
-B.zM=new A.az(225e3)
-B.zN=new A.az(25e4)
-B.zO=new A.az(2961926e3)
+B.zN=new A.az(225e3)
+B.zO=new A.az(25e4)
+B.zP=new A.az(2961926e3)
 B.aZ=new A.az(3e5)
-B.zP=new A.az(3e6)
+B.zQ=new A.az(3e6)
 B.k2=new A.az(35e4)
 B.k3=new A.az(375e3)
-B.zQ=new A.az(4e4)
+B.zR=new A.az(4e4)
 B.cU=new A.az(4e5)
-B.zR=new A.az(5e4)
+B.zS=new A.az(5e4)
 B.fZ=new A.az(5e5)
-B.zS=new A.az(5e6)
 B.cV=new A.az(6e5)
 B.h_=new A.az(75e3)
 B.zT=new A.az(8e4)
@@ -72392,7 +72392,7 @@ $.afS=A.b([],t.no)
 $.ak1=0
 $.ak0=0
 $.alk=null
-$.anB=B.zP
+$.anB=B.zQ
 $.lu=A.b([],t.c)
 $.AU=B.jY
 $.AT=null
