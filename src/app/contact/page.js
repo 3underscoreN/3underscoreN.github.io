@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faInstagram, faFacebook, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
     return (
@@ -46,24 +46,24 @@ const Contact = () => {
                         </div>
                         <div className="my-5" />
                         <div className="flex flex-col md:flex-row justify-center place-items-center md:justify-start gap-5">
-                            <form action="mailto:cychandt@connect.ust.hk">
+                            <form action="https://www.instagram.com/f.prime.of.x/">
                                 <button className="btn btn-accent dark:btn-primary">
-                                    <FontAwesomeIcon icon={faEnvelope} />
-                                    <p>cychandt@connect.ust.hk</p>
+                                    <FontAwesomeIcon icon={faInstagram} />
+                                    <p>Instagram</p>
                                 </button>
                             </form>
-                            <form action="https://www.linkedin.com/in/chung-yuk-chan-6a2742241/">
+                            <form action="https://www.facebook.com/chungyuk.chan.5">
                                 <button className="btn btn-accent dark:btn-primary">
-                                    <FontAwesomeIcon icon={faLinkedin} />
-                                    <p>LinkedIn</p>
+                                    <FontAwesomeIcon icon={faFacebook} />
+                                    <p>Facebook</p>
                                 </button>
                             </form>
-                            <form action="https://github.com/3underscoreN">
-                                <button className="btn btn-accent dark:btn-primary">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                    <p>GitHub</p>
+                            <div className="tooltip" data-tip="Only if I know you well enough :)">
+                                <button className="btn btn-warning btn-outline">
+                                    <FontAwesomeIcon icon={faDiscord} />
+                                    <p>3_n</p>
                                 </button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
