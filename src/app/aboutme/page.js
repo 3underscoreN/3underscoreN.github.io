@@ -72,7 +72,7 @@ const AboutMe = () => {
                                             </div>
                                             <p>My first personal website that served as my portfolio (with sub-optimal performance).</p>
                                             <div className="card-actions justify-end">
-                                                <button className="btn btn-accent-outline" onClick={openURL("/personal_website_v2/version_1/index.html")}>Open</button>
+                                                <button className="btn btn-accent-outline" onClick={openURL("/version_1/index.html")}>Open</button>
                                                 <button className="btn btn-accent-outline" onClick={openURL("https://github.com/3underscoreN/personal_website_development")}>View repository <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></button>
                                             </div>
                                         </div>
