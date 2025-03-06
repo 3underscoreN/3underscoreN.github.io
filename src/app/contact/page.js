@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -42,7 +43,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="w-full md:w-auto">
-                        <div className="text-xl md:text-2xl tracking-wide text-overflow-truncate md:flex md:justify-end">
+                        <div className="text-xl md:text-2xl tracking-wide text-overflow-truncate">
                             <h2>Informal Contacts</h2>
                         </div>
                         <div className="my-5" />
