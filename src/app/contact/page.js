@@ -20,7 +20,7 @@ const Contact = () => {
                         </div>
                         <div className="my-5" />
                         <div className="flex flex-col md:flex-row justify-center place-items-center md:justify-start gap-5">
-                            <form action="mailto:cychandt@connect.ust.hk">
+                            <form action="">
                                 <button className="btn btn-accent dark:btn-primary">
                                     <FontAwesomeIcon icon={faEnvelope} />
                                     <p>cychandt@connect.ust.hk</p>
