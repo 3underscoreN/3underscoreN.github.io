@@ -53,7 +53,7 @@ const PlayList = ({ className }) => {
                     <div>
                         <div className="font-bold text-xl">Ultimate Force</div>
                         <div className="opacity-80">Sakuzyo</div>
-                        <div className="font-light opacity-60">Artcore, Hardcore</div>
+                        <div className="font-light opacity-60">Speedcore</div>
                     </div>
                     <div className="flex h-full w-full flex-row-reverse place-items-center">
                         <button className="btn btn-primary btn-circle" onClick={openURL("https://www.youtube.com/watch?v=4kYLJeouTfA")}>
