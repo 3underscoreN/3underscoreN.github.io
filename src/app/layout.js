@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
                         <div>
                             {children}
                         </div>
-                        </ThemeProvider>
+                    </ThemeProvider>
                 </body>
             </html>
         </ViewTransitions>
