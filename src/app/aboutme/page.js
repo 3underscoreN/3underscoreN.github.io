@@ -177,7 +177,7 @@ const AboutMe = () => {
                     </div>
                 </div> {/* End of collapse */}
                 <div className="mx-3">
-                    <p className="text-3xl font-bold italic opacity-60">TL, DR?</p>
+                    <p className="text-3xl font-bold italic opacity-60">TL, DR? Employer?</p>
                     <div className="flex flex-col md:flex-row gap-5 flex-wrap justify-center md:justify-normal place-items-center">
                         <p className="text-xl">You can view/download a 1-page résumé here:</p>
                         <button className="btn btn-primary" onClick={openURL("/aboutme/cv_cychandt.pdf")}>
