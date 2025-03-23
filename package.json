@@ -19,7 +19,7 @@
     "framer-motion": "^12.4.7",
     "gl-matrix": "^3.4.3",
     "gsap": "^3.12.7",
-    "next": "15.1.7",
+    "next": "15.2.3",
     "next-view-transitions": "^0.3.4",
     "nextjs-simple-typewriter": "^5.2.2",
     "ogl": "^1.0.11",
