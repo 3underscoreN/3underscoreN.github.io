@@ -36,19 +36,14 @@ const Navbar = () => {
             </ul>
             <ul className="block md:hidden gap-x-6">
               <li>
-                <details className="dropdown dropdown-end">
-                  <summary
-                    className={`btn btn-circle swap swap-rotate ${isMobileDropdownOpen ? "swap-active" : ""}`}
-                    onClick={() => {
-                      setIsMobileDropdownOpen(!isMobileDropdownOpen);
-                    }}
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} className="btn rounded-4xl">
+                    <FontAwesomeIcon icon={faListUl} />
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="menu dropdown-content bg-base-100 opacity-75 rounded-box w-52 p-2 shadow-xl"
                   >
-                    <input type="checkbox" />
-
-                    <FontAwesomeIcon className="swap-off" icon={faListUl} />
-                    <FontAwesomeIcon className="swap-on" icon={faXmark} />
-                  </summary>
-                  <ul className="menu dropdown-content bg-base-100 opacity-75 rounded-box w-52 p-2 shadow-xl">
                     <li>
                       <Link href="/aboutme">
                         <div className="flex justify-center place-items-center min-h-[3rem]">
@@ -70,7 +65,7 @@ const Navbar = () => {
                       <ModeToggler />
                     </div>
                   </ul>
-                </details>
+                </div>
               </li>
             </ul>
           </div>
