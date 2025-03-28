@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 
 import LogoBotton from "@/components/navigation/logobutton";
 import ModeToggler from "@/components/navigation/modetoggler";
@@ -9,7 +9,7 @@ import { Link } from "next-view-transitions";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListUl } from "@fortawesome/free-solid-svg-icons";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 const Navbar = () => {
   return (
     <>
