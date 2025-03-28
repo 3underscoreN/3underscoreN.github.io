@@ -11,8 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListUl } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
-  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
-
   return (
     <>
       <nav className="backdrop-filter backdrop-blur-lg w-full h-20 sticky top-0 bg-base-100/10 drop-shadow-xl z-50">
