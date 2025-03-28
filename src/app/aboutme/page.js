@@ -47,7 +47,7 @@ const AboutMe = () => {
             >
               Development
             </div>
-            <div className="collapse-content">
+            <div className="collapse-content min-w-0">
               <div className="md:mx-5 md:my-5">
                 <p>
                   As you can (probably) tell, I don&apos;t really have good
@@ -63,9 +63,9 @@ const AboutMe = () => {
                   real life:
                 </p>
                 {/* <div className="pt-5 flex flex-row place-items-stretch gap-12 flex-wrap place-content-center md:justify-center"> */}
-                <div className="flex place-items-center justify-center">
-                  <div className="carousel carousel-center rounded-box max-w-full space-x-4 p-4">
-                    <div className="card bg-base-100 shadow-xl max-w-80 carousel-item">
+                <div className="flex justify-center place-items-center">
+                  <div className="carousel bg-base-300 carousel-center max-w-full rounded-box space-x-4 p-4">
+                    <div className="card bg-base-100 shadow-xl w-full md:w-1/2 max-w-80 carousel-item">
                       <figure>
                         <Image
                           src="/static/projectcover/musicbot.png"
@@ -101,7 +101,7 @@ const AboutMe = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="card bg-base-100 shadow-xl max-w-80 carousel-item">
+                    <div className="card bg-base-100 shadow-xl w-full md:w-1/2 max-w-80 carousel-item">
                       <figure>
                         <Image
                           src="/static/projectcover/personalwebv1.png"
@@ -115,9 +115,6 @@ const AboutMe = () => {
                         <div className="flex gap-2">
                           <div className="badge badge-primary badge-outline">
                             Flutter
-                          </div>
-                          <div className="badge badge-primary badge-outline">
-                            Dart
                           </div>
                           <div className="badge badge-warning badge-outline">
                             Deprecated
@@ -146,7 +143,7 @@ const AboutMe = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="card bg-base-100 shadow-xl max-w-80 carousel-item">
+                    <div className="card bg-base-100 shadow-xl w-full md:w-1/2 max-w-80 carousel-item">
                       <figure>
                         <Image
                           src="/static/projectcover/personalwebv2.png"
