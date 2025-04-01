@@ -62,8 +62,9 @@ const AboutMe = () => {
                   random, small applications that solve some small hassals in
                   real life:
                 </p>
+
                 {/* <div className="pt-5 flex flex-row place-items-stretch gap-12 flex-wrap place-content-center md:justify-center"> */}
-                <div className="flex justify-center place-items-center">
+                <div className="flex py-4 justify-center place-items-center">
                   <div className="carousel bg-base-300 carousel-center max-w-full rounded-box space-x-4 p-4">
                     <div className="card bg-base-100 shadow-xl w-full md:w-1/2 max-w-80 carousel-item">
                       <figure>
@@ -224,6 +225,13 @@ const AboutMe = () => {
                     </div>
                   </div>
                 </div>
+                <div className="flex w-full justify-center">
+                  <p className="text-sm text-center">
+                    If you&apos;re on a mouse, hold&nbsp;
+                    <kbd className="kbd">Shift</kbd>&nbsp;while scrolling to
+                    scroll horizontally.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -263,7 +271,6 @@ const AboutMe = () => {
                     className="w-full max-w-[560px] aspect-video"
                     src="https://www.youtube-nocookie.com/embed/aJ3Z4klhUvQ?si=O-uRhfnZiqhRdyZ9"
                     title="YouTube video player"
-                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
