@@ -199,6 +199,9 @@ const AboutMe = () => {
                             Flutter
                           </div>
                           <div className="badge badge-primary badge-outline">
+                            Next.js
+                          </div>
+                          <div className="badge badge-primary badge-outline">
                             Python
                           </div>
                         </div>
