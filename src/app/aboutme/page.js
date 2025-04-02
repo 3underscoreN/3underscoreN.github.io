@@ -167,20 +167,15 @@ const AboutMe = () => {
                           This is the website you&apos;re looking at right now!
                         </p>
                         <div className="card-actions justify-end">
-                          <div
-                            className="tooltip"
-                            data-tip="The repo is private."
+                          <button
+                            className="btn btn-accent-outline"
+                            onClick={openURL(
+                              "https://github.com/3underscoreN/3underscoreN.github.io",
+                            )}
                           >
-                            <button
-                              className="btn btn-accent-outline"
-                              disabled="disabled"
-                            >
-                              View repository{" "}
-                              <FontAwesomeIcon
-                                icon={faArrowUpRightFromSquare}
-                              />
-                            </button>
-                          </div>
+                            View repository{" "}
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                          </button>
                         </div>
                       </div>
                     </div>
