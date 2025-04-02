@@ -10,10 +10,10 @@ import Iridescence from "./iridescence";
 const DarkModeBackground = () => {
   return (
     <>
-      <div className="absolute top-0 w-full h-screen -z-50">
+      <div className="absolute top-0 w-full h-full -z-50">
         <Aurora colorStops={["#39977f", "#3d276f", "#1d1640"]} />
       </div>
-      <div className="absolute top-0 w-full h-screen -z-40">
+      <div className="absolute top-0 w-full h-full -z-40">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
           particleCount={400}
@@ -32,7 +32,7 @@ const DarkModeBackground = () => {
 const LightModeBackground = () => {
   return (
     <>
-      <div className="absolute top-0 w-full h-screen -z-50">
+      <div className="absolute top-0 w-full h-full -z-50">
         <Iridescence speed={0.1} mouseReact={false} />
       </div>
     </>

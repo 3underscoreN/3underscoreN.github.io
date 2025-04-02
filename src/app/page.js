@@ -17,7 +17,7 @@ export default function Home() {
       <div className="static">
         <Background />
 
-        <div className="absolute top-5 pt-48 px-3 md:px-24 -z-30">
+        <div className="absolute top-5 pt-32 md:pt-48 px-3 md:px-24 -z-30">
           <span className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-overflow-truncate">
             <div>
               <h1>Hi, I&apos;m Kelvin.</h1>
@@ -43,13 +43,13 @@ export default function Home() {
             </div>
           </span>
         </div>
-        <div className="absolute bottom-0 right-0 -z-20">
-          <div className="flex flex-row-reverse pb-8 lg:pb-20 pr-8 lg:pr-20">
+        <div className="absolute bottom-8 right-8 -z-20">
+          <div className="flex flex-row-reverse lg:pb-22 lg:pr-22">
             <Image
-              className="md:h-[360px] aspect-auto"
+              className="aspect-auto"
               src="/static/image/ralsei1.png"
-              height={180 * 2}
-              width={150 * 2}
+              height={180 * 1.5}
+              width={150 * 1.5}
               alt="Ralsei"
               priority={true}
             />
