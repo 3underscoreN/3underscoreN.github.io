@@ -6,7 +6,7 @@ Personal website of 3_n.
 Requires Node.js version 22.14 and npm 11.2.0.
 
 # Note:
-This website follows a cowboy development process. Do expect frequent updates and random bugs here and there.
+This website follows the cowboy development process. Do expect frequent updates and random bugs here and there.
 
 # Credits
 
