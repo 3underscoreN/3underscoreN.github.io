@@ -218,6 +218,44 @@ const AboutMe = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="card bg-base-100 shadow-xl w-full md:w-1/2 max-w-80 carousel-item">
+                      <figure>
+                        <Image
+                          src="/static/projectcover/thevale.png"
+                          alt="Hong Kong Arcade Queue"
+                          width={660}
+                          height={430}
+                        />
+                      </figure>
+                      <div className="card-body">
+                        <h2 className="card-title">The Vale</h2>
+                        <div className="flex gap-2">
+                          <div className="badge badge-primary badge-outline">
+                            Next.js
+                          </div>
+                        </div>
+                        <p>
+                          A webpage for people to dump their emotions into, and to listen to other&apos;s
+                          emotions. It is a simple full-stack application.
+                        </p>
+                        <div className="card-actions justify-end">
+                          <button
+                            className="btn btn-accent-outline"
+                            onClick={openURL("https://the-vale-zeta.vercel.app")}
+                          >
+                            Open
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                          </button>
+                          <button
+                            className="btn btn-accent-outline"
+                            onClick={openURL("https://github.com/3underscoreN/theVale")}
+                          >
+                            View repository{" "}
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="flex w-full justify-center">
