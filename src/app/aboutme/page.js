@@ -182,47 +182,8 @@ const AboutMe = () => {
                     <div className="card bg-base-100 shadow-xl w-full md:w-1/2 max-w-80 carousel-item">
                       <figure>
                         <Image
-                          src="/static/projectcover/hkarcadequeue.png"
-                          alt="Hong Kong Arcade Queue"
-                          width={660}
-                          height={430}
-                        />
-                      </figure>
-                      <div className="card-body">
-                        <h2 className="card-title">音G資訊台</h2>
-                        <div className="flex gap-2">
-                          <div className="badge badge-primary badge-outline">
-                            Flutter
-                          </div>
-                          <div className="badge badge-primary badge-outline">
-                            Next.js
-                          </div>
-                          <div className="badge badge-primary badge-outline">
-                            Python
-                          </div>
-                        </div>
-                        <p>
-                          A simple application to show information about Hong
-                          Kong&apos;s arcade. Also includes a report system to
-                          report the queues of arcade and display to other
-                          users.
-                        </p>
-                        <div className="card-actions justify-end">
-                          <button
-                            className="btn btn-accent-outline"
-                            onClick={openURL("https://hkarcadequeue.web.app")}
-                          >
-                            Open
-                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card bg-base-100 shadow-xl w-full md:w-1/2 max-w-80 carousel-item">
-                      <figure>
-                        <Image
                           src="/static/projectcover/thevale.png"
-                          alt="Hong Kong Arcade Queue"
+                          alt="The Vale"
                           width={660}
                           height={430}
                         />
@@ -230,6 +191,9 @@ const AboutMe = () => {
                       <div className="card-body">
                         <h2 className="card-title">The Vale</h2>
                         <div className="flex gap-2">
+                          <div className="badge badge-primary badge-outline">
+                            React
+                          </div>
                           <div className="badge badge-primary badge-outline">
                             Next.js
                           </div>
@@ -241,7 +205,7 @@ const AboutMe = () => {
                         <div className="card-actions justify-end">
                           <button
                             className="btn btn-accent-outline"
-                            onClick={openURL("https://the-vale-zeta.vercel.app")}
+                            onClick={openURL("https://thevale.top")}
                           >
                             Open
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
