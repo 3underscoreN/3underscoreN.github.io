@@ -1,7 +1,6 @@
-import Navbar from "@/components/navigation/navbar";
+import "@/app/globals.css";
 import Head from "next/head";
 import { Montserrat } from "next/font/google";
-import "./globals.css";
 
 import { ViewTransitions } from "next-view-transitions";
 
@@ -17,8 +16,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Kelvin, 3_n",
-  description: "3_n's personal website.",
+  title: "3_n",
 };
 
 export default function RootLayout({ children }) {
@@ -26,12 +24,11 @@ export default function RootLayout({ children }) {
     <ViewTransitions>
       <html lang="en" className={montserrat.className} data-theme="dark">
         <Head>
-          <title>Kelvin, 3_n</title>
+          <title>3_n</title>
         </Head>
         <body>
           <ThemeProvider>
-            <Navbar />
-            <div>{children}</div>
+            {children}
           </ThemeProvider>
         </body>
       </html>

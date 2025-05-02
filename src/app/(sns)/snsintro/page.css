@@ -1,0 +1,11 @@
+.bg-sky {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/sns/image/bg-sky.jpeg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+ul {
+  text-align: center;
+}
