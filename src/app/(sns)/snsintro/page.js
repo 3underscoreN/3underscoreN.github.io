@@ -8,7 +8,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import '@/app/(sns)/snsintro/page.css';
 
-const SSNIntro = () => {
+const SNSIntro = () => {
   return (
     <>
       <div className="bg-sky" />
@@ -144,4 +144,4 @@ const SSNIntro = () => {
   );
 }
 
-export default SSNIntro;
+export default SNSIntro;
