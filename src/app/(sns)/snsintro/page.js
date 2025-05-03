@@ -88,7 +88,7 @@ const SSNIntro = () => {
             <div className="card bg-gray-500/80 shadow-xl backdrop-blur-lg">
               <figure>
                 <Image
-                  src="/static/sns/image/game/sky.jpg"
+                  src="/static/sns/image/game/sky.jpeg"
                   alt="Sky: Children of the Light"
                   width={3087}
                   height={2157}
