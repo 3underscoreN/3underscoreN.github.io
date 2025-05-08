@@ -4,11 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import '@/app/(sns)/snsintro/page.css';
 
-const SSNIntro = () => {
+const SNSIntro = () => {
   return (
     <>
       <div className="bg-sky" />
@@ -37,9 +37,14 @@ const SSNIntro = () => {
             </h2>
           </li>
           <li>
-            <Link href="https://www.instagram.com/that_derivative_guy/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon className="text-2xl" icon={faInstagram} />
-            </Link>
+            <div className="flex justify-center space-x-4">
+              <Link href="https://www.instagram.com/that_derivative_guy/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon className="text-2xl" icon={faInstagram} />
+              </Link>
+              <Link href="https://github.com/3underscoreN/3underscoreN.github.io" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon className="text-2xl" icon={faGithub} />
+              </Link>
+            </div>
           </li>
           <div className="divider"></div>
           <li>
@@ -144,4 +149,4 @@ const SSNIntro = () => {
   );
 }
 
-export default SSNIntro;
+export default SNSIntro;
