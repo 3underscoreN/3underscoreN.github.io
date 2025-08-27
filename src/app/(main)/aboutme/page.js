@@ -354,7 +354,7 @@ const AboutMe = () => {
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl">And Many More...</h3>
+                    <h3 className="font-bold text-xl">and many more...</h3>
                   </div>
                 </div>
               </div>
