@@ -24,6 +24,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/resume">
+                  <p>Resume</p>
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact">
                   <p>Contact</p>
                 </Link>
@@ -46,6 +51,14 @@ const Navbar = () => {
                       <Link href="/aboutme">
                         <div className="flex justify-center place-items-center min-h-[3rem]">
                           <div>About</div>
+                        </div>
+                      </Link>
+                    </li>
+                    <hr />
+                    <li>
+                      <Link href="/resume">
+                        <div className="flex justify-center place-items-center min-h-[3rem]">
+                          <div>Resume</div>
                         </div>
                       </Link>
                     </li>
