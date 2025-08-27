@@ -80,8 +80,8 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">CantoPop</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <button className="btn btn-primary btn-circle">
-              <FontAwesomeIcon icon={faArrowRight} onClick={openURL("https://www.youtube.com/watch?v=ievJesbs_fw")} />
+            <button className="btn btn-primary btn-circle" onClick={openURL("https://www.youtube.com/watch?v=ievJesbs_fw")}>
+              <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
         </li>
