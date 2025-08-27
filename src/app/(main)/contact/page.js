@@ -4,7 +4,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLinkedin, faGithub, faInstagram, faFacebook, faDiscord, faGit } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faInstagram, faFacebook, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "next-view-transitions";
 
 const Contact = () => {
