@@ -63,7 +63,7 @@ const Contact = () => {
                       </button>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Facebook">
-                      <button className="btn btn-primary btn-circle" aria-label="Facebook" onClick={openURL("https://www.facebook.com/chungyuk.chan.5/")}>
+                      <button className="btn btn-primary btn-circle" aria-label="Facebook" onClick={openURL("https://www.facebook.com/chungyuk.chan.5")}>
                         <FontAwesomeIcon icon={faFacebook} />
                       </button>
                     </div>
