@@ -57,9 +57,9 @@ const AboutMe = () => {
                   to learn.
                 </p>
                 <p className="pt-2">
-                  During my free time in studying (which i also don&apos;t have
+                  During my free time in studying (which I also don&apos;t have
                   much, unfortunately) I like to spend time into writing some
-                  random, small applications that solve some small hassals in
+                  random, small applications that solve some small hassles in
                   real life:
                 </p>
 
