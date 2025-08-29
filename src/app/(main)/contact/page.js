@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGithub, faInstagram, faFacebook, faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "next-view-transitions";
+import Background from "@/components/background";
 
 const Contact = () => {
   const openURL = (url) => {
@@ -17,9 +17,10 @@ const Contact = () => {
 
   return (
     <>
+      <Background />
       <div className="absolute top-0 w-full">
         <div className="hero min-h-screen">
-          <div className="hero-content text-center">
+          <div className="hero-content text-center bg-base-100 rounded-xl">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Hello.</h1>
               <p className="py-4 text-2xl">
