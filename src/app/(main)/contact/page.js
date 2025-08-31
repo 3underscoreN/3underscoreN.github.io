@@ -18,8 +18,8 @@ const Contact = () => {
   return (
     <>
       <Background />
-      <div className="absolute top-0 w-full">
-        <div className="hero min-h-screen">
+      <div className="absolute top-0 w-full flex items-center justify-center">
+        <div className="hero min-h-screen m-4">
           <div className="hero-content text-center bg-base-100 rounded-xl">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Hello.</h1>
