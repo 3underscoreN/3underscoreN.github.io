@@ -10,6 +10,7 @@ RUN npm run build
 
 
 FROM nginx:alpine
+ENV NODE_ENV=production
 
 RUN rm -rf /usr/share/nginx/html/*
 
