@@ -3,17 +3,19 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import Link from "next/link";
+
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGithub, faInstagram, faFacebook, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import Background from "@/components/background";
 
-const Contact = () => {
-  const openURL = (url) => {
-    return (() => {
-      window.open(url);
-    });
-  }
+const ContactButton = ({ href, label, children }) => (
+  <Link className="btn btn-primary btn-circle" aria-label={label} href={href} target="_blank" rel="noopener noreferrer">
+    {children}
+  </Link>
+);
 
+const Contact = () => {
 
   return (
     <>
@@ -35,19 +37,19 @@ const Contact = () => {
                 <div className="tab-content p-6">
                   <div className="flex gap-2 items-center justify-center space-x-2">
                     <div className="tooltip tooltip-bottom" data-tip="Email">
-                      <button className="btn btn-primary btn-circle" aria-label="Email" onClick={openURL("mailto:cychandt@connect.ust.hk")}>
+                      <ContactButton href="mailto:cychandt@connect.ust.hk" label="Email">
                         <FontAwesomeIcon icon={faEnvelope} />
-                      </button>
+                      </ContactButton>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="GitHub">
-                      <button className="btn btn-primary btn-circle" aria-label="GitHub" onClick={openURL("https://github.com/3underscoreN")}>
+                      <ContactButton href="https://github.com/3underscoreN" label="GitHub">
                         <FontAwesomeIcon icon={faGithub} />
-                      </button>
+                      </ContactButton>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="LinkedIn">
-                      <button className="btn btn-primary btn-circle" aria-label="LinkedIn" onClick={openURL("https://www.linkedin.com/in/chung-yuk-chan-6a2742241/")}>
+                      <ContactButton href="https://www.linkedin.com/in/chung-yuk-chan-6a2742241/" label="LinkedIn">
                         <FontAwesomeIcon icon={faLinkedin} />
-                      </button>
+                      </ContactButton>
                     </div>
                   </div>
                 </div>
@@ -59,19 +61,19 @@ const Contact = () => {
                  <div className="tab-content p-6">
                   <div className="flex gap-2 items-center justify-center space-x-2">
                     <div className="tooltip tooltip-bottom" data-tip="Instagram">
-                      <button className="btn btn-primary btn-circle" aria-label="Instagram" onClick={openURL("https://www.instagram.com/f.prime.of.x/")}>
+                      <ContactButton href="https://www.instagram.com/f.prime.of.x/" label="Instagram">
                         <FontAwesomeIcon icon={faInstagram} />
-                      </button>
+                      </ContactButton>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Facebook">
-                      <button className="btn btn-primary btn-circle" aria-label="Facebook" onClick={openURL("https://www.facebook.com/chungyuk.chan.5")}>
+                      <ContactButton href="https://www.facebook.com/chungyuk.chan.5" label="Facebook">
                         <FontAwesomeIcon icon={faFacebook} />
-                      </button>
+                      </ContactButton>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Discord">
-                      <button className="btn btn-primary btn-circle" aria-label="Discord" onClick={openURL("https://discord.com/users/376343682644836353")}>
+                      <ContactButton href="https://discord.com/users/376343682644836353" label="Discord">
                         <FontAwesomeIcon icon={faDiscord} />
-                      </button>
+                      </ContactButton>
                     </div>
                   </div>
                 </div>

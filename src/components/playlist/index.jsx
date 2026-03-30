@@ -1,13 +1,10 @@
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const PlayList = ({ className }) => {
-  const openURL = (url) => {
-    return (() => { window.open(url) });
-  }
-
   return (
     <div className={className}>
       <ul className="list bg-base-100 rounded-box shadow-md md:w-80 overflow-y-scroll max-h-[400px]">
@@ -20,9 +17,9 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Fantasy</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <button className="btn btn-primary btn-circle" onClick={openURL("https://www.youtube.com/watch?v=ikr59Iplnlo")}>
+            <Link href="https://www.youtube.com/watch?v=ikr59Iplnlo" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faArrowRight} />
-            </button>
+            </Link>
           </div>
         </li>
         <li className="list-row">
@@ -32,9 +29,9 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Piano</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <button className="btn btn-primary btn-circle" onClick={openURL("https://www.youtube.com/watch?v=IxX78L9jihw")}>
+            <Link href="https://www.youtube.com/watch?v=IxX78L9jihw" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faArrowRight} />
-            </button>
+            </Link>
           </div>
         </li>
         <li className="list-row">
@@ -44,9 +41,9 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Wind Symphony</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <button className="btn btn-primary btn-circle" onClick={openURL("https://www.youtube.com/watch?v=mADsHdH2a_Q")}>
+            <Link href="https://www.youtube.com/watch?v=mADsHdH2a_Q" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faArrowRight} />
-            </button>
+            </Link>
           </div>
         </li>
         <li className="list-row">
@@ -56,9 +53,9 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Speedcore</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <button className="btn btn-primary btn-circle" onClick={openURL("https://www.youtube.com/watch?v=4kYLJeouTfA")}>
+            <Link href="https://www.youtube.com/watch?v=4kYLJeouTfA" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faArrowRight} />
-            </button>
+            </Link>
           </div>
         </li>
         <li className="list-row">
@@ -68,9 +65,9 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Wind Symphony</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <button className="btn btn-primary btn-circle">
-              <FontAwesomeIcon icon={faArrowRight} onClick={openURL("https://www.youtube.com/watch?v=u4BqNDor_ow")} />
-            </button>
+            <Link href="https://www.youtube.com/watch?v=u4BqNDor_ow" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
           </div>
         </li>
         <li className="list-row">
@@ -80,9 +77,9 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">CantoPop</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <button className="btn btn-primary btn-circle" onClick={openURL("https://www.youtube.com/watch?v=ievJesbs_fw")}>
+            <Link href="https://www.youtube.com/watch?v=ievJesbs_fw" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faArrowRight} />
-            </button>
+            </Link>
           </div>
         </li>
       </ul>
