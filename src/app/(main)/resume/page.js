@@ -8,11 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const ResumePage = () => {
-  const openURL = (url) => {
-    return (() => {
-      window.open(url);
-    });
-  }
 
 
   return (
@@ -89,8 +84,8 @@ const ResumePage = () => {
               <h3 className="text-md font-semibold">IT Office, LCSD, HKSARG</h3>
               <p className="text-sm">
                 A 1-year placement in the IT Office of LCSD.<br />
-                Engaged in product management of the Smart Library System.<br />
-                Other duties include development of testing scripts and assist in procurement.
+                Engaged in project management of the Smart Library System.<br />
+                Other duties include development of testing scripts.
               </p>
             </div>
           </li>
@@ -100,11 +95,9 @@ const ResumePage = () => {
           For a consolidated view of my projects, career and education: 
         </p>
         <div className="text-center">
-          <Link href="/resume/cv_cychandt.pdf">
-            <button className="btn btn-primary">
-              Download CV
-              <FontAwesomeIcon icon={faDownload} />
-            </button>
+          <Link className="btn btn-primary" href="/resume/cv_cychandt.pdf">
+            Download CV
+            <FontAwesomeIcon icon={faDownload} />
           </Link>
         </div>
       </div>

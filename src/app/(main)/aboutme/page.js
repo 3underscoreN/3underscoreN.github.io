@@ -28,12 +28,13 @@ const AboutMe = () => {
         <div className="text-lg md:text-xl lg:mr-36">
           <p>
             I am a junior computer science student at{" "}
-            <a
+            <Link
               className="underline underline-offset-2"
               href="https://cse.hkust.edu.hk"
+              rel="noopener noreferrer"
             >
               HKUST
-            </a>
+            </Link>
             . However, my interest covers quite a lot of stuff:
           </p>
         </div>
@@ -329,18 +330,8 @@ const AboutMe = () => {
                     <div className="my-2" />
                     <p>
                       I love hand-writing letters, stamps, and wax seals.
-                      It&apos;s a strange thing to love, but it really shows the
-                      effort someone is putting into the letter.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl">Mental Health</h3>
-                    <div className="my-2" />
-                    <p>
-                      After seeing people with depression struggled with daily
-                      activities, I have been trying to get my hands on how to
-                      accompany peple with self-harm behaviours, and make them
-                      feel not as bad in general.
+                      It&apos;s kind of old-fashioned, but I find it very fulfilling to
+                      receive a handwritten letter.
                     </p>
                   </div>
                   <div>
