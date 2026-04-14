@@ -1,8 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin "daisyui" {
     themes: light, dark;
     logs: true;
-};
+}
 
 @plugin "daisyui/theme" {
     name: "light";
@@ -37,8 +37,6 @@
     --depth: 1;
     --noise: 1;
 }
-
-;
 
 @plugin "daisyui/theme" {
     name: "dark";
@@ -76,6 +74,8 @@
 
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
 
+@plugin 'tailwind-scrollbar';
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -103,7 +103,6 @@ html {
     --color-ralsei-dark-green: #38705e;
     --color-ralsei-bright-pink: #ff3eb7;
 } */
-
 
 /* :root {
   --background: #000000;

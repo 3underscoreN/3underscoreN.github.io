@@ -8,7 +8,9 @@ const PlayList = ({ className }) => {
   return (
     <div className={className}>
       <ul className="list bg-base-100 rounded-box shadow-md md:w-80 overflow-y-scroll max-h-[400px]">
-        <li className="p-4 pb-2 text-xl font-bold tracking-wide">3_n's playlist</li>
+        <li className="p-4 pb-2 text-xl font-bold tracking-wide">
+          3_n's playlist
+        </li>
         <hr className="opacity-40" />
         <li className="list-row">
           <div>
@@ -17,7 +19,12 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Fantasy</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <Link href="https://www.youtube.com/watch?v=ikr59Iplnlo" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/watch?v=ikr59Iplnlo"
+              className="btn btn-primary btn-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -29,7 +36,12 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Piano</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <Link href="https://www.youtube.com/watch?v=IxX78L9jihw" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/watch?v=IxX78L9jihw"
+              className="btn btn-primary btn-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -41,7 +53,12 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Wind Symphony</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <Link href="https://www.youtube.com/watch?v=mADsHdH2a_Q" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/watch?v=mADsHdH2a_Q"
+              className="btn btn-primary btn-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -53,7 +70,12 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Speedcore</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <Link href="https://www.youtube.com/watch?v=4kYLJeouTfA" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/watch?v=4kYLJeouTfA"
+              className="btn btn-primary btn-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -65,7 +87,12 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">Wind Symphony</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <Link href="https://www.youtube.com/watch?v=u4BqNDor_ow" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/watch?v=u4BqNDor_ow"
+              className="btn btn-primary btn-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -77,7 +104,29 @@ const PlayList = ({ className }) => {
             <div className="font-light opacity-60">CantoPop</div>
           </div>
           <div className="flex h-full w-full flex-row-reverse place-items-center">
-            <Link href="https://www.youtube.com/watch?v=ievJesbs_fw" className="btn btn-primary btn-circle" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/watch?v=ievJesbs_fw"
+              className="btn btn-primary btn-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
+          </div>
+        </li>
+        <li className="list-row">
+          <div>
+            <div className="font-bold text-xl">リオライト</div>
+            <div className="opacity-80">Lyolite</div>
+            <div className="font-light opacity-60">J-pop</div>
+          </div>
+          <div className="flex h-full w-full flex-row-reverse place-items-center">
+            <Link
+              href="https://www.youtube.com/watch?v=3f-bHuYlq5Q"
+              className="btn btn-primary btn-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -85,6 +134,6 @@ const PlayList = ({ className }) => {
       </ul>
     </div>
   );
-}
+};
 
 export default PlayList;
