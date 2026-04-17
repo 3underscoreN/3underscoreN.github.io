@@ -33,7 +33,7 @@ const Contact = () => {
       <Background />
       <div className="absolute top-0 w-full flex items-center justify-center">
         <div className="hero min-h-screen mx-4">
-          <div className="hero-content text-center bg-base-100 rounded-xl">
+          <div className="hero-content text-center bg-base-100 rounded-xl max-w-svw">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Hello.</h1>
               <p className="py-4 text-2xl">
@@ -126,7 +126,7 @@ const Contact = () => {
                   />
                   <span>Encrypted Channels</span>
                 </label>
-                <div className="tab-content p-6">
+                <div className="tab-content p-6 max-w-full">
                   <div className="flex flex-col gap-2 items-center justify-center space-x-2">
                     <Link 
                       className="link link-primary" 
@@ -140,11 +140,9 @@ const Contact = () => {
                     >
                       PGP Key
                     </Link>
-                    <pre className="m-1 p-1 rounded-lg max-w-full overflow-x-scroll bg-base-300">
-                      <code>
-                        7E5A 4FFA BC45 DF7F 1F8D  D69D 266A 5A87 EE37 D774
-                      </code>
-                    </pre>
+                    <code className="md:text-xs">
+                      7E5A 4FFA BC45 DF7F 1F8D  D69D 266A 5A87 EE37 D774
+                    </code>
                   </div>
                 </div>
               </div>
