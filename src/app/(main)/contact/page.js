@@ -79,7 +79,6 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-
                 <label className="tab flex-auto">
                   <input
                     type="radio"
@@ -117,6 +116,35 @@ const Contact = () => {
                         <FontAwesomeIcon icon={faDiscord} />
                       </ContactButton>
                     </div>
+                  </div>
+                </div>
+                <label className="tab flex-auto">
+                  <input
+                    type="radio"
+                    name="contact"
+                    aria-label="Encrypted Channels"
+                  />
+                  <span>Encrypted Channels</span>
+                </label>
+                <div className="tab-content p-6">
+                  <div className="flex flex-col gap-2 items-center justify-center space-x-2">
+                    <Link 
+                      className="link link-primary" 
+                      href="mailto:security@3underscoreN.work"
+                    >
+                      security@3underscoreN.work
+                    </Link>
+                    <Link
+                      className="link link-primary"
+                      href="/pgp/3underscoreN.pub.asc"
+                    >
+                      PGP Key
+                    </Link>
+                    <pre className="m-1 p-1 rounded-lg max-w-full overflow-x-scroll bg-base-300">
+                      <code>
+                        7E5A 4FFA BC45 DF7F 1F8D  D69D 266A 5A87 EE37 D774
+                      </code>
+                    </pre>
                   </div>
                 </div>
               </div>
