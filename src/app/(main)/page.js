@@ -29,7 +29,7 @@ export default function Home() {
               <div className={dmSerifText.className}>
                 <span className="text-[#ff3eb7] font-bold">
                   <Typewriter
-                    words={["student.", "developer.", "companion.", "gamer."]}
+                    words={["student.", "developer.", "gamer."]}
                     cursor={true}
                     cursorStyle="|"
                     cursorBlinking={true}
