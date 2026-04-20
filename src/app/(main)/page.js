@@ -14,10 +14,10 @@ const dmSerifText = DM_Serif_Text({
 export default function Home() {
   return (
     <>
-      <div className="static">
+      <div className="fixed inset-0 isolate overflow-hidden">
         <Background />
 
-        <div className="absolute top-5 pt-32 md:pt-48 px-3 md:px-24 -z-30">
+        <div className="absolute top-5 z-10 px-3 md:px-24" style={{ paddingTop: "calc(8rem + env(safe-area-inset-top))" }}>
           <span className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-overflow-truncate">
             <div>
               <h1>Hi, I&apos;m Kelvin.</h1>
@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </span>
         </div>
-        <div className="absolute bottom-8 right-8 -z-20">
+        <div className="absolute bottom-8 right-8 z-10">
           <div className="flex flex-row-reverse lg:pb-22 lg:pr-22">
             <Image
               className="aspect-auto"
