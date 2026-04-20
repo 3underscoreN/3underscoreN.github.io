@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <Head>
           <title>3_n</title>
         </Head>
-        <body className="min-h-full overflow-x-hidden">
+        <body className="min-h-full overflow-x-hidden md:pb-8">
           <ThemeProvider>
             {children}
           </ThemeProvider>
