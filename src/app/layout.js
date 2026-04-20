@@ -19,14 +19,20 @@ export const metadata = {
   title: "3_n",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({ children }) {
   return (
     <ViewTransitions>
-      <html lang="en" className={montserrat.className} data-theme="dark">
+      <html lang="en" className={`${montserrat.className} h-full`} data-theme="dark">
         <Head>
           <title>3_n</title>
         </Head>
-        <body>
+        <body className="min-h-full overflow-x-hidden">
           <ThemeProvider>
             {children}
           </ThemeProvider>

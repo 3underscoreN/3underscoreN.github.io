@@ -41,7 +41,11 @@ const LightModeBackground = () => {
 
 const Background = () => {
   const { isDarkMode, _ } = useContext(ThemeContext);
-  return <>{isDarkMode ? <DarkModeBackground /> : <LightModeBackground />}</>;
+  return (
+    <div className="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
+      {isDarkMode ? <DarkModeBackground /> : <LightModeBackground />}
+    </div>
+  );
 };
 
 export default Background;

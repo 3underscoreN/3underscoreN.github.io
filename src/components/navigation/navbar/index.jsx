@@ -13,7 +13,7 @@ import { faListUl } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <>
-      <nav className="mx-4 mt-4 rounded-box backdrop-filter backdrop-blur-lg h-20 sticky top-0 bg-base-100/10 border border-base-100/40 drop-shadow-xl z-50">
+      <nav className="fixed inset-x-4 top-4 rounded-box backdrop-filter backdrop-blur-lg h-20 bg-base-100/10 border border-base-100/40 drop-shadow-xl z-50">
         <div className="container mx-auto px-4 h-full">
           <div className="navbar flex justify-between items-center h-full self-center">
             <LogoBotton />
