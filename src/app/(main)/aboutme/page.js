@@ -9,16 +9,12 @@ import {
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { Card } from "@/components/card";
+
 import PlayList from "@/components/playlist";
 import { cn } from "@/util/cn";
 
 const AboutMe = () => {
-  const openURL = (url) => {
-    return () => {
-      window.open(url);
-    };
-  };
-
   return (
     <>
       <div className="my-10 mx-5 md:mx-10">
@@ -69,174 +65,103 @@ const AboutMe = () => {
                 <div className="mt-2 -z-1 bg-base-300 rounded-box">
                   <div className="p-4 max-w-[calc(full-4rem)] overflow-x-scroll ">
                     <div className={cn("flex flex-row gap-x-4 ")}>
-                      <div className="card shrink-0 bg-base-100 shadow-xl w-full md:w-1/2 max-w-80">
-                        <figure>
-                          <Image
-                            src="/static/projectcover/musicbot.png"
-                            alt="music bot"
-                            width={660}
-                            height={430}
-                          />
-                        </figure>
-                        <div className="card-body">
-                          <h2 className="card-title">Discord music bot</h2>
-                          <div className="flex gap-2">
-                            <div className="badge badge-primary badge-outline">
-                              Python
-                            </div>
-                            <div className="badge badge-warning badge-outline">
-                              Deprecated
-                            </div>
-                          </div>
-                          <p>
-                            A discord bot written in Python to play music in
-                            voice channels.
-                          </p>
-                          <div className="card-actions justify-end">
-                            <button
-                              className="btn btn-accent-outline"
-                              onClick={openURL(
-                                "https://github.com/3underscoreN/3_n-s-slash-Music-Bot",
-                              )}
-                            >
-                              View repository{" "}
-                              <FontAwesomeIcon
-                                icon={faArrowUpRightFromSquare}
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="card shrink-0 bg-base-100 shadow-xl w-full md:w-1/2 max-w-80">
-                        <figure>
-                          <Image
-                            src="/static/projectcover/personalwebv1.png"
-                            alt="Personal website (flutter)"
-                            width={660}
-                            height={430}
-                          />
-                        </figure>
-                        <div className="card-body">
-                          <h2 className="card-title">Personal website v1</h2>
-                          <div className="flex gap-2">
-                            <div className="badge badge-primary badge-outline">
-                              Flutter
-                            </div>
-                            <div className="badge badge-warning badge-outline">
-                              Deprecated
-                            </div>
-                          </div>
-                          <p>
-                            My first personal website that served as my
-                            portfolio (with sub-optimal performance).
-                          </p>
-                          <div className="card-actions justify-end">
-                            <button
-                              className="btn btn-accent-outline"
-                              onClick={openURL("/version_1/index.html")}
-                            >
-                              Open
-                            </button>
-                            <button
-                              className="btn btn-accent-outline"
-                              onClick={openURL(
-                                "https://github.com/3underscoreN/personal_website_development",
-                              )}
-                            >
-                              View repository{" "}
-                              <FontAwesomeIcon
-                                icon={faArrowUpRightFromSquare}
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="card shrink-0 bg-base-100 shadow-xl w-full md:w-1/2 max-w-80">
-                        <figure>
-                          <Image
-                            src="/static/projectcover/personalwebv2.png"
-                            alt="Personal website (react)"
-                            width={660}
-                            height={430}
-                          />
-                        </figure>
-                        <div className="card-body">
-                          <h2 className="card-title">Personal website v2</h2>
-                          <div className="flex gap-2">
-                            <div className="badge badge-primary badge-outline">
-                              React
-                            </div>
-                            <div className="badge badge-primary badge-outline">
-                              Next.js
-                            </div>
-                          </div>
-                          <p>
-                            This is the website you&apos;re looking at right
-                            now!
-                          </p>
-                          <div className="card-actions justify-end">
-                            <button
-                              className="btn btn-accent-outline"
-                              onClick={openURL(
-                                "https://github.com/3underscoreN/3underscoreN.github.io",
-                              )}
-                            >
-                              View repository{" "}
-                              <FontAwesomeIcon
-                                icon={faArrowUpRightFromSquare}
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="card shrink-0 bg-base-100 shadow-xl w-full md:w-1/2 max-w-80">
-                        <figure>
-                          <Image
-                            src="/static/projectcover/thevale.png"
-                            alt="The Vale"
-                            width={660}
-                            height={430}
-                          />
-                        </figure>
-                        <div className="card-body">
-                          <h2 className="card-title">The Vale</h2>
-                          <div className="flex gap-2">
-                            <div className="badge badge-primary badge-outline">
-                              React
-                            </div>
-                            <div className="badge badge-primary badge-outline">
-                              Next.js
-                            </div>
-                          </div>
-                          <p>
-                            A webpage for people to dump their emotions into,
-                            and to listen to other&apos;s emotions. It is a
-                            simple full-stack application.
-                          </p>
-                          <div className="card-actions justify-end">
-                            <button
-                              className="btn btn-accent-outline"
-                              onClick={openURL("https://thevale.top")}
-                            >
-                              Open
-                              <FontAwesomeIcon
-                                icon={faArrowUpRightFromSquare}
-                              />
-                            </button>
-                            <button
-                              className="btn btn-accent-outline"
-                              onClick={openURL(
-                                "https://github.com/3underscoreN/theVale",
-                              )}
-                            >
-                              View repository{" "}
-                              <FontAwesomeIcon
-                                icon={faArrowUpRightFromSquare}
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
+                      <Card
+                        title="Discord music bot"
+                        imageUrl="/static/projectcover/musicbot.png"
+                        badges={[
+                          { text: "Python", color: "primary" },
+                          { text: "Deprecated", color: "warning" },
+                        ]}
+                        description="A discord bot written in Python to play music in voice channels."
+                        actions={[
+                          {
+                            text: "View repository",
+                            url: "https://github.com/3underscoreN/3_n-s-slash-Music-Bot",
+                            isExternal: true,
+                            tooltip: "View on GitHub",
+                          },
+                        ]}
+                      />
+                      <Card
+                        title="Personal website v1"
+                        imageUrl="/static/projectcover/personalwebv1.png"
+                        badges={[
+                          { text: "Flutter", color: "primary" },
+                          { text: "Deprecated", color: "warning" },
+                        ]}
+                        description="My first personal website that served as my portfolio (with sub-optimal performance)."
+                        actions={[
+                          {
+                            text: "Open",
+                            url: "/version_1/index.html",
+                            isExternal: false,
+                            tooltip: "Visit the old version",
+                          },
+                        ]}
+                      />
+                      <Card
+                        title="Personal website v2"
+                        imageUrl="/static/projectcover/personalwebv2.png"
+                        badges={[
+                          { text: "React", color: "primary" },
+                          { text: "Next.js", color: "primary" },
+                        ]}
+                        description="This is the website you're looking at right now!"
+                        actions={[
+                          {
+                            text: "View repository",
+                            url: "https://github.com/3underscoreN/3underscoreN.github.io",
+                            isExternal: true,
+                            tooltip: "View on GitHub",
+                          },
+                        ]}
+                      />
+                      <Card
+                        title="The Vale"
+                        imageUrl="/static/projectcover/thevale.png"
+                        badges={[
+                          { text: "React", color: "primary" },
+                          { text: "Next.js", color: "primary" },
+                        ]}
+                        description="A webpage for people to dump their emotions into,
+                        and to listen to other's emotions. It is a
+                        simple full-stack application."
+                        actions={[
+                          {
+                            text: "Open",
+                            url: "https://thevale.top",
+                            isExternal: true,
+                            tooltip: "Visit The Vale",
+                          },
+                          {
+                            text: "View repository",
+                            url: "https://github.com/3underscoreN/theVale",
+                            isExternal: true,
+                            tooltip: "View on GitHub",
+                          },
+                        ]}
+                      />
+                      <Card
+                        title="Team Boostday Mgnt System"
+                        imageUrl="/static/projectcover/boostday.png"
+                        badges={[
+                          { text: "React", color: "primary" },
+                          { text: "Next.js", color: "primary" },
+                          { text: "Python", color: "primary" },
+                        ]}
+                        description="A simple integration of nextjs and
+                        discord bot to make management of boostday
+                        proposals for an arcade game a breeze.
+                        "
+                        actions={[
+                          {
+                            text: "View repository",
+                            url: "",
+                            isExternal: true,
+                            isDisabled: true,
+                          },
+                        ]}
+                      />
                       <div className="mr-0.5 shink-0">&nbsp;</div>
                     </div>
                   </div>
