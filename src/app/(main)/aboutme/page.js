@@ -150,7 +150,7 @@ const AboutMe = () => {
                           { text: "Python", color: "primary" },
                         ]}
                         description="A simple integration of nextjs and
-                        discord bot to make management of boostday
+                        discord bot to make managing boostday
                         proposals for an arcade game a breeze.
                         "
                         actions={[

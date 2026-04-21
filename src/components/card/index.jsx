@@ -18,7 +18,13 @@ export function Card({ title, badges, description, imageUrl, actions }) {
             {badges.map((badge, index) => (
               <div
                 key={index}
-                className={cn(`badge badge-${badge.color} badge-outline`)}
+                className={cn(
+                  `badge badge-outline`,
+                  badge.color === "primary" && "badge-primary",
+                  badge.color === "secondary" && "badge-secondary",
+                  badge.color === "accent" && "badge-accent",
+                  badge.color === "warning" && "badge-warning",
+                )}
               >
                 {badge.text}
               </div>
@@ -30,7 +36,7 @@ export function Card({ title, badges, description, imageUrl, actions }) {
               <Link
                 key={index}
                 className={cn(
-                  `btn btn-${action.style}-outline`,
+                  `btn`,
                   action.isDisabled && "btn-disabled",
                   action.tooltip && "tooltip tooltip-bottom",
                 )}
