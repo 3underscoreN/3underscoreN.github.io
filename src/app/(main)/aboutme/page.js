@@ -156,9 +156,9 @@ const AboutMe = () => {
                         actions={[
                           {
                             text: "View repository",
-                            url: "",
+                            url: "https://github.com/3underscoreN/IKUSANON-Joint-Compose",
                             isExternal: true,
-                            isDisabled: true,
+                            tooltip: "View on GitHub",
                           },
                         ]}
                       />
