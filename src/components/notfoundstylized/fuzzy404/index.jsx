@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 
 const FuzzyText = ({
   children,
-  fontSize = "clamp(2rem, 10vw, 10rem)",
+  fontSize = "8rem",
   fontWeight = 900,
   fontFamily = "inherit",
   color = "#fff",
@@ -99,7 +99,7 @@ const FuzzyText = ({
           -fuzzRange,
           -fuzzRange,
           offscreenWidth + 2 * fuzzRange,
-          tightHeight + 2 * fuzzRange
+          tightHeight + 2 * fuzzRange,
         );
         const intensity = isHovering ? hoverIntensity : baseIntensity;
         for (let j = 0; j < tightHeight; j++) {
@@ -113,7 +113,7 @@ const FuzzyText = ({
             dx,
             j,
             offscreenWidth,
-            1
+            1,
           );
         }
         animationFrameId = window.requestAnimationFrame(run);
@@ -159,7 +159,9 @@ const FuzzyText = ({
       if (enableHover) {
         canvas.addEventListener("mousemove", handleMouseMove);
         canvas.addEventListener("mouseleave", handleMouseLeave);
-        canvas.addEventListener("touchmove", handleTouchMove, { passive: false });
+        canvas.addEventListener("touchmove", handleTouchMove, {
+          passive: false,
+        });
         canvas.addEventListener("touchend", handleTouchEnd);
       }
 
@@ -196,7 +198,7 @@ const FuzzyText = ({
     hoverIntensity,
   ]);
 
-  return <canvas ref={canvasRef} />;
+  return <canvas ref={canvasRef} aria-hidden="true" />;
 };
 
 export default FuzzyText;
