@@ -1,0 +1,108 @@
+---
+title: "Hello world!"
+summary: "My first blog here - and what I used to set it up on a static site."
+minToRead: 2
+tags: []
+date: "2026-04-24"
+author: "3underscoreN"
+---
+
+Hi! This is my first blog post in an attempt to have more content on this website. I am not too sure if I have the time and capacity to write more, but I would try to keep up with the content.
+
+Since this is the first blog, it would probably be a cool idea if I share how I set this blog up.
+
+# Seeking for a CM solution
+When I first explore options for blogging on a static site, I found [Contentlayer](https://github.com/contentlayerdev/contentlayer), which is a very powerful SDK for content management. Unfortunately, it is now deprecated, and does not support nextjs version 15 :(
+
+After some more research, I found a library that fits my use case, which is [Content Collections](https://www.content-collections.dev/). So I started configuring it and setting it up. 
+
+# Setting up the library
+Firstly, I need to install the library, obviously:
+
+```sh
+npm i @content-collections/core @content-collections/next @content-collections/mdx zod -D
+```
+
+Then I need to set up the configuration for the library, which is pretty straightforward. I first need to config `content-collections.ts`:
+
+- I wish to place my posts in `directory: "src/posts" as `.mdx` files.
+- I also need to define my schema with `zod` (which is very cool and easy!) 
+- I wish to use `compileMDX` to transform the content into renderable MDX content.
+
+This is what the configuration would look like:
+
+```ts
+import { defineCollection, defineConfig } from "@content-collections/core";
+import { compileMDX } from "@content-collections/mdx";
+import { z } from "zod";
+
+const posts = defineCollection({
+  name: "posts",
+  directory: "src/posts",
+  include: "**/*.mdx",
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    minToRead: z.number().int().positive(),
+    date: z.coerce.date(),
+    tags: z.array(z.string()),
+    author: z.string(),
+    content: z.string(),
+  }),
+  transform: async (document, context) => {
+    const mdx = await compileMDX(context, document);
+    return {
+      ...document,
+      mdx,
+    };
+  },
+});
+
+export default defineConfig({
+  content: [posts],
+});
+```
+
+Afterwards, I also need to add Nextjs-specific config, that is:
+1. Adding an alias for the generated content, and
+2. Using the Nextjs adapter.
+
+For (1), I simply add an alias to my `jsconfig.json`:
+
+```json
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "content-collections": ["./.content-collections/generated"]
+    }
+  }
+}
+```
+
+For (2), I need to add the adapter in `next.config.js`:
+
+```js
+import { withContentCollections } from "@content-collections/next";
+
+const nextConfig = {
+  output: "export",
+
+  images: {
+    unoptimized: true,
+  },
+};
+
+export default withContentCollections(nextConfig);
+```
+That's it. Afterwardds, I can get all the posts as a list of `posts` with the following import:
+
+```js
+import { allPosts } from "content-collections";
+```
+
+and I can work out the implementation starting from here.
+
+Overall, I am pretty happy with the library and the experience with `content-collections`. And of course, the implementation is very rough, so please do expect huge modifications in the future.
+
+Thanks for staying by and reading this post! I hope you find it useful or interesting (or at least not boring). See you in the next post!

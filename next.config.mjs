@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export',
+import { withContentCollections } from "@content-collections/next";
 
-    images: {
-        unoptimized: true,
+const nextConfig = {
+  output: "export",
+
+  images: {
+    unoptimized: true,
   },
 };
 
-export default nextConfig;
+export default withContentCollections(nextConfig);
