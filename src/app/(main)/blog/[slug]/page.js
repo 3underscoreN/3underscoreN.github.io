@@ -33,18 +33,28 @@ export default async function Post({ params }) {
         <FontAwesomeIcon icon={faArrowLeft} />
         <span>Back</span>
       </Link>
+      <div className="my-5 mx-5 md:mx-32 divider"></div>
       <div className="flex justify-center place-items-center text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-overflow-truncate">
         <h1>{post.title}</h1>
       </div>
       <div className="my-3 md:my-5" />
-      <div className="flex gap-2 justify-center place-items-center">
-        <FontAwesomeIcon icon={faCalendar} className="text-primary" />
+      <div className="grid grid-cols-[1fr_2fr] grid-flow-row gap-x-2 md:flex md:gap-2 md:justify-center md:place-items-center">
+        <FontAwesomeIcon
+          icon={faCalendar}
+          className="text-primary justify-self-end md:justify-self-auto"
+        />
         <span className="align-middle">{post.date.toLocaleDateString()}</span>
-        <span className="mx-1">&middot;</span>
-        <FontAwesomeIcon icon={faClock} className="text-primary" />
+        <span className="mx-1 hidden md:block">&middot;</span>
+        <FontAwesomeIcon
+          icon={faClock}
+          className="text-primary justify-self-end md:justify-self-auto"
+        />
         <span className="align-middle">&tilde;{post.minToRead} min</span>
-        <span className="mx-1">&middot;</span>
-        <FontAwesomeIcon icon={faUser} className="text-primary" />
+        <span className="mx-1 hidden md:block">&middot;</span>
+        <FontAwesomeIcon
+          icon={faUser}
+          className="text-primary justify-self-end md:justify-self-auto"
+        />
         <span className="align-middle">{post.author}</span>
       </div>
       <div className="my-5 mx-5 md:mx-32 divider"></div>
