@@ -12,11 +12,13 @@ Hi! This is my first blog post in an attempt to have more content on this websit
 Since this is the first blog, it would probably be a cool idea if I share how I set this blog up.
 
 # Seeking for a CM solution
+
 When I first explore options for blogging on a static site, I found [Contentlayer](https://github.com/contentlayerdev/contentlayer), which is a very powerful SDK for content management. Unfortunately, it is now deprecated, and does not support nextjs version 15 :(
 
-After some more research, I found a library that fits my use case, which is [Content Collections](https://www.content-collections.dev/). So I started configuring it and setting it up. 
+After some more research, I found a library that fits my use case, which is [Content Collections](https://www.content-collections.dev/). So I started configuring it and setting it up.
 
 # Setting up the library
+
 Firstly, I need to install the library, obviously:
 
 ```sh
@@ -26,7 +28,7 @@ npm i @content-collections/core @content-collections/next @content-collections/m
 Then I need to set up the configuration for the library, which is pretty straightforward. I first need to config `content-collections.ts`:
 
 - I wish to place my posts in `directory: "src/posts"` as `.mdx` files.
-- I also need to define my schema with `zod` (which is very cool and easy!) 
+- I also need to define my schema with `zod` (which is very cool and easy!)
 - I wish to use `compileMDX` to transform the content into renderable MDX content.
 
 This is what the configuration would look like:
@@ -64,6 +66,7 @@ export default defineConfig({
 ```
 
 Afterwards, I also need to add Nextjs-specific config, that is:
+
 1. Adding an alias for the generated content, and
 2. Using the Nextjs adapter.
 
@@ -95,7 +98,8 @@ const nextConfig = {
 
 export default withContentCollections(nextConfig);
 ```
-That's it. Afterwardds, I can get all the posts as a list of `posts` with the following import:
+
+That's it. Afterwards, I can get all the posts as a list of `posts` with the following import:
 
 ```js
 import { allPosts } from "content-collections";
