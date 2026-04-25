@@ -49,7 +49,7 @@ export function CustomMultilineCode({ children }) {
         firacode.className,
       )}
     >
-      <div className="mt-2 flex flex-row items-center justify-start gap-2">
+      <div className="mt-2 flex flex-row items-center justify-start gap-2 text-neutral-content dark:text-base-content">
         <FontAwesomeIcon icon={faCode} />
         <span>{children.props.className?.replace("language-", "")}</span>
         <div className="flex-1" />
