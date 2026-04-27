@@ -13,43 +13,47 @@ export default function Blog() {
       </div>
       <div className="my-3 md:my-5" />
       <ul className="list rounded-box">
-        {allPosts.map((post, index) => (
-          <Link
-            href={`/blog/${post._meta.fileName.replace(/\.mdx?$/, "")}`}
-            key={index}
-            className="rounded-box bg-base-200 hover:bg-base-300 transition-colors duration-200 shadow-md"
-          >
-            <li className="list-item p-4">
-              <div className="flex flex-col gap-y-1">
-                <h2 className="text-lg md:text-2xl tracking-wide font-semibold text-overflow-truncate">
-                  {post.title}
-                </h2>
-                <p className="text-base text-base-content/60">{post.summary}</p>
-                <div className="grid grid-cols-[auto_1fr] gap-x-2 text-sm items-center">
-                  <FontAwesomeIcon
-                    icon={faCalendar}
-                    className="text-primary py-2"
-                  />
-                  <span className="align-middle">
-                    {post.date.toLocaleDateString()}
-                  </span>
-                  <FontAwesomeIcon
-                    icon={faClock}
-                    className="text-primary py-2"
-                  />
-                  <span className="align-middle">
-                    &tilde;{post.minToRead} min
-                  </span>
-                  <FontAwesomeIcon
-                    icon={faUser}
-                    className="text-primary py-2"
-                  />
-                  <span className="align-middle">{post.author}</span>
+        {allPosts
+          .sort((a, b) => new Date(b.date) - new Date(a.date))
+          .map((post, index) => (
+            <Link
+              href={`/blog/${post._meta.fileName.replace(/\.mdx?$/, "")}`}
+              key={index}
+              className="rounded-box bg-base-200 hover:bg-base-300 transition-colors duration-200 shadow-md"
+            >
+              <li className="list-item p-4">
+                <div className="flex flex-col gap-y-1">
+                  <h2 className="text-lg md:text-2xl tracking-wide font-semibold text-overflow-truncate">
+                    {post.title}
+                  </h2>
+                  <p className="text-base text-base-content/60">
+                    {post.summary}
+                  </p>
+                  <div className="grid grid-cols-[auto_1fr] gap-x-2 text-sm items-center">
+                    <FontAwesomeIcon
+                      icon={faCalendar}
+                      className="text-primary py-2"
+                    />
+                    <span className="align-middle">
+                      {post.date.toLocaleDateString()}
+                    </span>
+                    <FontAwesomeIcon
+                      icon={faClock}
+                      className="text-primary py-2"
+                    />
+                    <span className="align-middle">
+                      &tilde;{post.minToRead} min
+                    </span>
+                    <FontAwesomeIcon
+                      icon={faUser}
+                      className="text-primary py-2"
+                    />
+                    <span className="align-middle">{post.author}</span>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </Link>
-        ))}
+              </li>
+            </Link>
+          ))}
       </ul>
     </div>
   );
