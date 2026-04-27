@@ -10,7 +10,10 @@ import {
   faClock,
   faUser,
   faArrowLeft,
+  faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
+
+import ShareBtn from "@/components/sharebtn";
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
@@ -28,12 +31,11 @@ export default async function Post({ params }) {
   if (!post) return <></>;
 
   return (
-    <div className="my-10 mx-5 md:mx-10">
-      <Link href="/blog" className="btn btn-primary">
+    <div className="my-10 mx-5 md:mx-10" id="top">
+      <Link href="/blog" className="btn btn-primary btn-circle md:mx-32">
         <FontAwesomeIcon icon={faArrowLeft} />
-        <span>Back</span>
       </Link>
-      <div className="my-5 mx-5 md:mx-32 divider"></div>
+      <div className="my-5 md:mx-32 divider"></div>
       <div className="flex justify-center place-items-center text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-overflow-truncate">
         <h1>{post.title}</h1>
       </div>
@@ -57,16 +59,22 @@ export default async function Post({ params }) {
         />
         <span className="align-middle">{post.author}</span>
       </div>
-      <div className="my-5 mx-5 md:mx-32 divider"></div>
+      <div className="my-5 md:mx-32 divider"></div>
       <article className="flex flex-col gap-y-4 md:gap-y-6 md:px-32">
         <MDXCustomized code={post.mdx} />
       </article>
       <div className="divider py-10 text-base-content/50">END OF CONTENT</div>
-      <div className="flex flex-col place-items-center pb-10 md:pb-4">
-        <Link href="/blog" className="btn btn-primary">
+      <div className="flex flex-row place-items-center pb-10 md:pb-4 mx-5 md:mx-32 gap-4">
+        <Link href="/blog" className="btn btn-primary btn-circle">
           <FontAwesomeIcon icon={faArrowLeft} />
-          <span>Back to Blog</span>
         </Link>
+        <Link href="#top" className="btn btn-primary btn-circle">
+          <FontAwesomeIcon icon={faArrowUp} />
+        </Link>
+        <ShareBtn
+          url={typeof window !== "undefined" ? window.location.href : ""}
+          title={post.title}
+        />
       </div>
     </div>
   );
