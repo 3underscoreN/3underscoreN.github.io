@@ -12,12 +12,12 @@ export default function Blog() {
         <h1>Blog</h1>
       </div>
       <div className="my-3 md:my-5" />
-      <ul className="list rounded-box">
+      <ul className="list rounded-box gap-4">
         {allPosts
           .sort((a, b) => new Date(b.date) - new Date(a.date))
           .map((post, index) => (
             <Link
-              href={`/blog/${post._meta.fileName.replace(/\.mdx?$/, "")}`}
+              href={`/blog/${encodeURI(post._meta.fileName.replace(/\.mdx?$/, ""))}`}
               key={index}
               className="rounded-box bg-base-200 hover:bg-base-300 transition-colors duration-200 shadow-md"
             >
