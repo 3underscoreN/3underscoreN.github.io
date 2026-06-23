@@ -36,7 +36,7 @@ export default async function Post({ params }) {
         <FontAwesomeIcon icon={faArrowLeft} />
       </Link>
       <div className="my-5 md:mx-32 divider"></div>
-      <div className="flex justify-center place-items-center text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-overflow-truncate">
+      <div className="flex justify-center place-items-center text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-overflow-truncate text-center">
         <h1>{post.title}</h1>
       </div>
       <div className="my-3 md:my-5" />
