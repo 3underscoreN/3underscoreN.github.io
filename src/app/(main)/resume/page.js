@@ -84,7 +84,7 @@ const ResumePage = () => {
               <h3 className="text-md font-semibold">IT Office, LCSD, HKSARG</h3>
               <p className="text-sm">
                 A 1-year placement in the IT Office of LCSD.<br />
-                Engaged in project management of the Smart Library System.<br />
+                Assisted in the management of the Smart Library System.<br />
                 Other duties include development of testing scripts.
               </p>
             </div>
