@@ -90,7 +90,7 @@ const ResumePage = () => {
             </div>
           </li>
         </ul>
-        <hr className="my-3 md:my-5" />
+        {/* <hr className="my-3 md:my-5" />
         <p className="">
           For a consolidated view of my projects, career and education: 
         </p>
@@ -99,7 +99,7 @@ const ResumePage = () => {
             Download CV
             <FontAwesomeIcon icon={faDownload} />
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );
