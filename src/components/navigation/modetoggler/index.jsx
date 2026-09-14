@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useContext } from "react";
-import { DayAndNightToggle } from "@/components/navigation/modetoggler/dayandnighttoggle";
+import { DnToggleV2 } from "@/components/navigation/modetoggler/dntogglev2";
 
 import { ThemeContext } from "@/app/provider/theme-provider";
 
@@ -14,10 +14,9 @@ const ModeToggler = ({ className }) => {
 
   return (
     <>
-      <DayAndNightToggle
+      <DnToggleV2
         onChange={handleThemeChange}
-        checked={isDarkMode}
-        size={24}
+        isDarkMode={isDarkMode}
         className={className}
       />
     </>
