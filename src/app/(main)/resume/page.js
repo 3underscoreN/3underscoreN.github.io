@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 
-import Link from "next/link";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faCircle, faDownload } from "@fortawesome/free-solid-svg-icons";
