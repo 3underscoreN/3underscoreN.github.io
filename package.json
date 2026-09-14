@@ -54,6 +54,7 @@
     "next-view-transitions": {
       "react": "$react",
       "react-dom": "$react-dom"
-    }
+    },
+    "uuid": "^14.0.0"
   }
 }
