@@ -50,7 +50,7 @@ const Navbar = () => {
                   </div>
                   <ul
                     tabIndex={0}
-                    className="menu dropdown-content bg-base-100 opacity-75 rounded-box w-52 p-2 shadow-xl"
+                    className="menu dropdown-content bg-base-100 rounded-box w-52 p-2 shadow-xl"
                   >
                     <li>
                       <Link href="/aboutme">
