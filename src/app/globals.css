@@ -39,8 +39,9 @@
 }
 
 @plugin "daisyui/theme" {
-    name: "dark";
+    name: "dark-custom";
     default: true;
+    prefersdark: true;
     color-scheme: "dark";
     --color-base-100: oklch(50% 0.0666 170.4);
     --color-base-200: oklch(40% 0.05 170.39);
@@ -72,7 +73,7 @@
     --noise: 1;
 }
 
-@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+@custom-variant dark (&:where([data-theme='dark-custom'], [data-theme='dark-custom'] *));
 
 @plugin 'tailwind-scrollbar';
 
