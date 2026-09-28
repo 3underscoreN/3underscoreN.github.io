@@ -17,7 +17,7 @@ export default function ThemeProvider({ children }) {
         switch (lastTheme) {
             case "light":
                 setIsDarkMode(false); break;
-            case "dark":
+            case "dark-custom":
                 setIsDarkMode(true); break;
             default:
                 setIsDarkMode(true); break;
@@ -25,7 +25,7 @@ export default function ThemeProvider({ children }) {
     }, []);
 
     useEffect(() =>{
-        const newTheme = isDarkMode ? "dark" : "light"
+        const newTheme = isDarkMode ? "dark-custom" : "light"
         document.querySelector('html').setAttribute('data-theme', newTheme);
         localStorage.setItem("theme", newTheme);
     }, [isDarkMode])

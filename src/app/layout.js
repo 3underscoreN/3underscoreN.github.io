@@ -28,7 +28,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <ViewTransitions>
-      <html lang="en" className={`${montserrat.className} h-full`} data-theme="dark">
+      <html lang="en" className={`${montserrat.className} h-full`} data-theme="dark-custom">
         <Head>
           <title>3_n</title>
         </Head>
