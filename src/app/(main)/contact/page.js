@@ -33,7 +33,7 @@ const Contact = () => {
       <Background />
       <div className="fixed inset-0 z-10 flex items-center justify-center px-4 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
         <div className="hero min-h-screen mx-4">
-          <div className="hero-content text-center bg-base-100 rounded-xl max-w-svw">
+          <div className="hero-content text-center bg-base-100 rounded-xl max-w-svw border dark:border-0 border-base-300 shadow-2xl">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Hello.</h1>
               <p className="py-4 text-2xl">
