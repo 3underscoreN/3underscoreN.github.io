@@ -77,13 +77,12 @@ const ResumePage = () => {
               <FontAwesomeIcon className="h-5 w-5 hover:scale-150 transition duration-300 ease-in-out" icon={faCircle} />
             </div>
             <div className="timeline-end mb-4">
-              <time className="font-mono italic">Since Jul 2025</time>
+              <time className="font-mono italic">Jul 2025 - Jun 2026</time>
               <h2 className="text-lg font-bold">Junior Programmer (Placement)</h2>
               <h3 className="text-md font-semibold">IT Office, LCSD, HKSARG</h3>
               <p className="text-sm">
                 A 1-year placement in the IT Office of LCSD.<br />
                 Assisted in the management of the Smart Library System.<br />
-                Other duties include development of testing scripts.
               </p>
             </div>
           </li>
