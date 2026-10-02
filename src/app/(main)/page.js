@@ -50,7 +50,7 @@ export default function Home() {
               src="/static/image/ralsei1.png"
               height={180 * 1.5}
               width={150 * 1.5}
-              alt="Ralsei"
+              alt="Ralsei. Originated from Deltarune. Thanks Toby Fox!"
               priority={true}
             />
           </div>
