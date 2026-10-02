@@ -131,6 +131,23 @@ const PlayList = ({ className }) => {
             </Link>
           </div>
         </li>
+        <li className="list-row">
+          <div>
+            <div className="font-bold text-xl">月葬</div>
+            <div className="opacity-80">Chroma × rintaro soma</div>
+            <div className="font-light opacity-60">ai</div>
+          </div>
+          <div className="flex h-full w-full flex-row-reverse place-items-center">
+            <Link
+              href="https://www.youtube.com/watch?v=4Mch-fZYQX8"
+              className="btn btn-primary btn-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
+          </div>
+        </li>
       </ul>
     </div>
   );
