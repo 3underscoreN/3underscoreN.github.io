@@ -3,8 +3,6 @@ import React, { useContext } from "react";
 
 import { ThemeContext } from "@/app/provider/theme-provider";
 
-import "./topbottombar.css"
-
 import Aurora from "./aurora";
 import Particles from "./stars";
 import Wave from "./wave"
@@ -76,11 +74,11 @@ const Background = () => {
 
   return (
     <div>
-      <div className={cn("pointer-events-none fixed left-1/2 -translate-x-1/2 z-10 top-1 w-[89%] h-2.75 block mask-transparent", isDarkMode ? darkBarColors.top : lightBarColors.top)} aria-hidden={true}/>
+      <div className={cn("pointer-events-none fixed left-1/2 -translate-x-1/2 z-100 top-1 w-[89%] h-2.75 block mask-r-from-transparent mask-r-to-transparent", isDarkMode ? darkBarColors.top : lightBarColors.top)} aria-hidden={true}/>
         <div className="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
           {isDarkMode ? <DarkModeBackground /> : <LightModeBackground />}
         </div>
-      <div className={cn("pointer-events-none fixed left-1/2 -translate-x-1/2 z-10 bottom-0.75 w-[89%] h-2.75 block mask-transparent", isDarkMode ? darkBarColors.bottom : lightBarColors.bottom)} aria-hidden={true}/>
+      <div className={cn("pointer-events-none fixed left-1/2 -translate-x-1/2 z-100 bottom-0.75 w-[89%] h-2.75 block mask-r-from-transparent mask-r-to-transparent", isDarkMode ? darkBarColors.bottom : lightBarColors.bottom)} aria-hidden={true}/>
     </div>
   );
 };

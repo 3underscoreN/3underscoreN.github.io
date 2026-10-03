@@ -1,4 +1,0 @@
-.mask-transparent {
-  mask-image: linear-gradient(to right, transparent, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, transparent);
-}
