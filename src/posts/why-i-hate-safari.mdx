@@ -18,7 +18,7 @@ the visuals of the website, turning the home page into a sandwich of top and bot
 To understand my horror, let us take a look at what my home page looked like when loaded on iOS 26 Safari:
 
 <div className="flex justify-center">
-  <img className="p-4 rounded-lg bg-base-200" src="/static/blog/image/homepage-old.png" alt="Safari view of the website's home page" width="30%"/>
+  <img className="p-4 rounded-lg bg-base-200 w-1/2 md:w-1/3" src="/static/blog/image/homepage-old.png" alt="Safari view of the website's home page"/>
 </div>
 
 Look at those hideous bars at the top and bottom.
@@ -63,8 +63,8 @@ I dropped these two elements into my background:
 and voila! It actually worked:
 
 <div className="flex justify-center gap-4">
-  <img className="p-4 rounded-lg bg-base-200" src="/static/blog/image/homepage-new-dark.png" alt="Safari view of the website's home page after applying the workaround, dark mode applied" width="30%"/>
-  <img className="p-4 rounded-lg bg-base-200" src="/static/blog/image/homepage-new-light.png" alt="Safari view of the website's home page after applying the workaround, light mode applied" width="30%"/>
+  <img className="p-4 rounded-lg bg-base-200 w-1/2 md:w-1/3" src="/static/blog/image/homepage-new-dark.png" alt="Safari view of the website's home page after applying the workaround, dark mode applied"/>
+  <img className="p-4 rounded-lg bg-base-200 w-1/2 md:w-1/3" src="/static/blog/image/homepage-new-light.png" alt="Safari view of the website's home page after applying the workaround, light mode applied"/>
 </div>
 
 The best thing about this workaround is that I can programmatically control the color of the bars. So I can give it two sets of colors
