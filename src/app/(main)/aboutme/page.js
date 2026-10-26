@@ -174,7 +174,7 @@ const AboutMe = () => {
                     <div className={cn("flex flex-row gap-x-4 ")}>
                       <Card
                         title="Stronghold-Protocol"
-                        imageUrl="/static/projectcover/boostday.png"
+                        imageUrl="/static/projectcover/strongholdprotocol.png"
                         badges={[
                           { text: "Node.js", color: "primary" },
                         ]}
