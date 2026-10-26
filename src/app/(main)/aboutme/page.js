@@ -166,6 +166,39 @@ const AboutMe = () => {
                     </div>
                   </div>
                 </div>
+
+                <p className="my-6" >Surprisingly, I was able to make some contributions to other open source projects:</p>
+
+                <div className="mt-2 -z-1 bg-base-300 rounded-box">
+                  <div className="p-4 max-w-[calc(full-4rem)] overflow-x-scroll ">
+                    <div className={cn("flex flex-row gap-x-4 ")}>
+                      <Card
+                        title="Stronghold-Protocol"
+                        imageUrl="/static/projectcover/boostday.png"
+                        badges={[
+                          { text: "Node.js", color: "primary" },
+                        ]}
+                        description="A fanmade implementation of the Stronghold Protocol gamemode in Arknights.
+                        Code owned by GitHub @sganggs"
+                        actions={[
+                          {
+                            text: "PR",
+                            url: "https://github.com/sganggs/Stronghold-Protocol/pulls?q=is%3Apr+author%3A3underscoreN",
+                            isExternal: true,
+                            tooltip: "View PRs created by me",
+                          },
+                          {
+                            text: "Repo",
+                            url: "https://github.com/sganggs/Stronghold-Protocol",
+                            isExternal: true,
+                            tooltip: "View repository on GitHub",
+                          },
+                        ]}
+                      />
+                      <div className="mr-0.5 shink-0">&nbsp;</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
