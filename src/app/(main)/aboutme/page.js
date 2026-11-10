@@ -24,7 +24,7 @@ const AboutMe = () => {
         <div className="my-3 md:my-5" />
         <div className="text-lg md:text-xl lg:mr-36">
           <p>
-            I am a junior computer science student at{" "}
+            I am a senior computer science student at{" "}
             <Link
               className="underline underline-offset-2"
               href="https://cse.hkust.edu.hk"
