@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Link from "next/link";
@@ -128,8 +126,8 @@ const Contact = () => {
                 </label>
                 <div className="tab-content p-6 max-w-full">
                   <div className="flex flex-col gap-2 items-center justify-center space-x-2">
-                    <Link 
-                      className="link link-primary" 
+                    <Link
+                      className="link link-primary"
                       href="mailto:security@3underscoreN.work"
                     >
                       security@3underscoreN.work
@@ -141,7 +139,7 @@ const Contact = () => {
                       PGP Key
                     </Link>
                     <code className="md:text-xs">
-                      7E5A 4FFA BC45 DF7F 1F8D  D69D 266A 5A87 EE37 D774
+                      7E5A 4FFA BC45 DF7F 1F8D D69D 266A 5A87 EE37 D774
                     </code>
                   </div>
                 </div>

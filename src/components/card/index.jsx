@@ -7,52 +7,52 @@ import { cn } from "@/util/cn";
 
 export function Card({ title, badges, description, imageUrl, actions }) {
   return (
-    <>
-      <div className="card shrink-0 bg-base-100 shadow-xl w-full md:w-1/2 max-w-80">
-        <figure>
-          <Image src={imageUrl} alt={title} width={660} height={430} />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{title}</h2>
-          <div className="flex gap-2">
-            {badges.map((badge, index) => (
-              <div
-                key={index}
-                className={cn(
-                  `badge badge-outline`,
-                  badge.color === "primary" && "badge-primary",
-                  badge.color === "secondary" && "badge-secondary",
-                  badge.color === "accent" && "badge-accent",
-                  badge.color === "warning" && "badge-warning",
-                )}
-              >
-                {badge.text}
-              </div>
-            ))}
-          </div>
-          <p>{description}</p>
-          <div className="card-actions justify-end">
-            {actions.map((action, index) => (
-              <Link
-                key={index}
-                className={cn(
-                  `btn`,
-                  action.isDisabled && "btn-disabled",
-                  action.tooltip && "tooltip tooltip-bottom",
-                )}
-                href={action.url}
-                data-tip={action.tooltip}
-                rel="noopener noreferrer"
-              >
-                {action.text}{" "}
-                {action.isExternal ? (
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                ) : null}
-              </Link>
-            ))}
-          </div>
+    <div className="card shrink-0 bg-base-100 shadow-xl w-full md:w-1/2 max-w-80">
+      <figure>
+        <Image src={imageUrl} alt={title} width={660} height={430} />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">{title}</h2>
+        <div className="flex gap-2">
+          {badges.map((badge, index) => (
+            <div
+              // biome-ignore lint/suspicious/noArrayIndexKey: The badges array is static and not expected to change, so using the index as a key is acceptable in this case.
+              key={index}
+              className={cn(
+                `badge badge-outline`,
+                badge.color === "primary" && "badge-primary",
+                badge.color === "secondary" && "badge-secondary",
+                badge.color === "accent" && "badge-accent",
+                badge.color === "warning" && "badge-warning",
+              )}
+            >
+              {badge.text}
+            </div>
+          ))}
+        </div>
+        <p>{description}</p>
+        <div className="card-actions justify-end">
+          {actions.map((action, index) => (
+            <Link
+              // biome-ignore lint/suspicious/noArrayIndexKey: Refer to above.
+              key={index}
+              className={cn(
+                `btn`,
+                action.isDisabled && "btn-disabled",
+                action.tooltip && "tooltip tooltip-bottom",
+              )}
+              href={action.url}
+              data-tip={action.tooltip}
+              rel="noopener noreferrer"
+            >
+              {action.text}{" "}
+              {action.isExternal ? (
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              ) : null}
+            </Link>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

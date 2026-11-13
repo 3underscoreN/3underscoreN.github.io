@@ -28,7 +28,7 @@ export default async function Post({ params }) {
     (p) => p._meta.fileName.replace(/\.mdx?$/, "") === slug,
   );
 
-  if (!post) return <></>;
+  if (!post) return;
 
   return (
     <div className="my-10 mx-5 md:mx-10" id="top">

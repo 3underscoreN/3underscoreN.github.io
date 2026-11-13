@@ -183,7 +183,7 @@ const FuzzyText = ({
     return () => {
       isCancelled = true;
       window.cancelAnimationFrame(animationFrameId);
-      if (canvas && canvas.cleanupFuzzyText) {
+      if (canvas?.cleanupFuzzyText) {
         canvas.cleanupFuzzyText();
       }
     };
@@ -198,7 +198,7 @@ const FuzzyText = ({
     hoverIntensity,
   ]);
 
-  return <canvas ref={canvasRef} aria-hidden="true" />;
+  return <canvas ref={canvasRef} />;
 };
 
 export default FuzzyText;

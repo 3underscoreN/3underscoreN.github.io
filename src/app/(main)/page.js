@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { Typewriter } from "nextjs-simple-typewriter";
 
@@ -17,7 +16,10 @@ export default function Home() {
       <div className="fixed inset-0 isolate overflow-hidden">
         <Background />
 
-        <div className="absolute top-5 z-10 px-3 md:px-24" style={{ paddingTop: "calc(8rem + env(safe-area-inset-top))" }}>
+        <div
+          className="absolute top-5 z-10 px-3 md:px-24"
+          style={{ paddingTop: "calc(8rem + env(safe-area-inset-top))" }}
+        >
           <span className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-overflow-truncate">
             <div>
               <h1>Hi, I&apos;m Kelvin.</h1>

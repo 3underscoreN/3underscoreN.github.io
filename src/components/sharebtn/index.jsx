@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { cn } from "@/util/cn";
 
 import { useState } from "react";
@@ -25,20 +24,18 @@ export default function ShareBtn({ url, title, className, ...props }) {
   };
 
   return (
-    <>
-      <button
-        onClick={handleShare}
-        className={cn(
-          "btn btn-primary btn-circle",
-          isCopied ? "tooltip tooltip-success" : "tooltip",
-          isCopied ? "tooltip-open" : "",
-          className,
-        )}
-        data-tip={isCopied ? "Link Copied!" : "Share this post"}
-        {...props}
-      >
-        <FontAwesomeIcon icon={faShareNodes} />
-      </button>
-    </>
+    <button
+      onClick={handleShare}
+      className={cn(
+        "btn btn-primary btn-circle",
+        isCopied ? "tooltip tooltip-success" : "tooltip",
+        isCopied ? "tooltip-open" : "",
+        className,
+      )}
+      data-tip={isCopied ? "Link Copied!" : "Share this post"}
+      {...props}
+    >
+      <FontAwesomeIcon icon={faShareNodes} />
+    </button>
   );
 }

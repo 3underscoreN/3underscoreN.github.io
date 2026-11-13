@@ -1,13 +1,6 @@
 "use client";
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowUpRightFromSquare,
-  faDownload,
-} from "@fortawesome/free-solid-svg-icons";
 
 import { Card } from "@/components/card";
 
@@ -39,10 +32,7 @@ const AboutMe = () => {
         <div className="lg:mx-10 py-10">
           <div className="collapse collapse-arrow bg-base-200 z-0">
             <input type="checkbox" name="interest-intro" />
-            <div
-              className="collapse-title text-xl font-medium"
-              aria-label="Opens tab about development"
-            >
+            <div className="collapse-title text-xl font-medium">
               Development
             </div>
             <div className="collapse-content min-w-0">
@@ -167,7 +157,10 @@ const AboutMe = () => {
                   </div>
                 </div>
 
-                <p className="my-6" >Surprisingly, I was able to make some contributions to other open source projects:</p>
+                <p className="my-6">
+                  Surprisingly, I was able to make some contributions to other
+                  open source projects:
+                </p>
 
                 <div className="mt-2 -z-1 bg-base-300 rounded-box">
                   <div className="p-4 max-w-[calc(full-4rem)] overflow-x-scroll ">
@@ -175,9 +168,7 @@ const AboutMe = () => {
                       <Card
                         title="Stronghold-Protocol"
                         imageUrl="/static/projectcover/strongholdprotocol.png"
-                        badges={[
-                          { text: "Node.js", color: "primary" },
-                        ]}
+                        badges={[{ text: "Node.js", color: "primary" }]}
                         description="A fanmade implementation of the Stronghold Protocol gamemode in Arknights.
                         Code owned by GitHub @sganggs"
                         actions={[
@@ -205,12 +196,7 @@ const AboutMe = () => {
           <div className="my-3 md:my-5" />
           <div className="collapse collapse-arrow bg-base-200">
             <input type="checkbox" name="interest-intro" />
-            <div
-              className="collapse-title text-xl font-medium"
-              aria-label="Opens tab about gaming"
-            >
-              Gaming
-            </div>
+            <div className="collapse-title text-xl font-medium">Gaming</div>
             <div className="collapse-content">
               <div className="mx-5 my-5">
                 <p>
@@ -250,12 +236,7 @@ const AboutMe = () => {
           <div className="my-3 md:my-5" />
           <div className="collapse collapse-arrow bg-base-200">
             <input type="checkbox" name="interest-intro" />
-            <div
-              className="collapse-title text-xl font-medium"
-              aria-label="Opens tab about gaming"
-            >
-              Music
-            </div>
+            <div className="collapse-title text-xl font-medium">Music</div>
             <div className="collapse-content">
               <div className="mx-5 my-5">
                 <p>
@@ -285,12 +266,7 @@ const AboutMe = () => {
           <div className="my-3 md:my-5" />
           <div className="collapse collapse-arrow bg-base-200">
             <input type="checkbox" name="interest-intro" />
-            <div
-              className="collapse-title text-xl font-medium"
-              aria-label="Opens tab about others"
-            >
-              Others
-            </div>
+            <div className="collapse-title text-xl font-medium">Others</div>
             <div className="collapse-content">
               <div className="mx-5 my-5">
                 <div className="flex flex-col gap-5">

@@ -1,12 +1,10 @@
-import React from "react";
-
 import Image from "next/image";
 import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-import '@/app/(sns)/snsintro/page.css';
+import "@/app/(sns)/snsintro/page.css";
 
 const SNSIntro = () => {
   return (
@@ -27,9 +25,7 @@ const SNSIntro = () => {
             </div>
           </li>
           <li>
-            <h1 className="text-xl font-bold text-center">
-              3_n
-            </h1>
+            <h1 className="text-xl font-bold text-center">3_n</h1>
           </li>
           <li>
             <h2 className="text-md text-center">
@@ -38,10 +34,18 @@ const SNSIntro = () => {
           </li>
           <li>
             <div className="flex justify-center space-x-4">
-              <Link href="https://www.instagram.com/that_derivative_guy/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://www.instagram.com/that_derivative_guy/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon className="text-2xl" icon={faInstagram} />
               </Link>
-              <Link href="https://github.com/3underscoreN/3underscoreN.github.io" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://github.com/3underscoreN/3underscoreN.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon className="text-2xl" icon={faGithub} />
               </Link>
             </div>
@@ -52,9 +56,12 @@ const SNSIntro = () => {
               <div className="card-body">
                 <h1 className="card-title">簡介</h1>
                 <p className="text-left">
-                  你好，我是3_n，可以叫我33。<br />
-                  生理男，目前香港在住。<br />
-                  比較喜歡聽歌，音遊苦手，也是FPS泡槍玩家。<br />
+                  你好，我是3_n，可以叫我33。
+                  <br />
+                  生理男，目前香港在住。
+                  <br />
+                  比較喜歡聽歌，音遊苦手，也是FPS泡槍玩家。
+                  <br />
                 </p>
               </div>
             </div>
@@ -64,11 +71,15 @@ const SNSIntro = () => {
               <div className="card-body">
                 <h1 className="card-title">性格</h1>
                 <p className="text-left">
-                  內向，而且比較呆；<br />
-                  不太會開話題，而且經常會飄到學業上去。<br />
-                  喜歡比較少人的群組，人多或者有完全陌生的人不太習慣。<br />
+                  內向，而且比較呆；
                   <br />
-                  沒有什麼特別雷的；<br />
+                  不太會開話題，而且經常會飄到學業上去。
+                  <br />
+                  喜歡比較少人的群組，人多或者有完全陌生的人不太習慣。
+                  <br />
+                  <br />
+                  沒有什麼特別雷的；
+                  <br />
                   可能雷到你的有：@@ @O@ 🥹 www 喔喔喔 🫠 😭 😋 這些。
                 </p>
               </div>
@@ -131,9 +142,7 @@ const SNSIntro = () => {
             </div>
           </li>
           <li>
-            <div className="divider">
-              完結
-            </div>
+            <div className="divider">完結</div>
           </li>
           <li>
             <span className="text-sm">最後更新日：3 May 2025</span>
@@ -147,6 +156,6 @@ const SNSIntro = () => {
       </div>
     </>
   );
-}
+};
 
 export default SNSIntro;
