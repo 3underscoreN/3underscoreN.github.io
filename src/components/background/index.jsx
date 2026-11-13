@@ -1,11 +1,11 @@
 "use client";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import { ThemeContext } from "@/app/provider/theme-provider";
 
 import Aurora from "./aurora";
 import Particles from "./stars";
-import Wave from "./wave"
+import Wave from "./wave";
 import { cn } from "@/util/cn";
 
 const DarkModeBackground = () => {
@@ -32,32 +32,30 @@ const DarkModeBackground = () => {
 
 const LightModeBackground = () => {
   return (
-    <>
-      <div className="absolute top-0 w-full h-full -z-50">
-        <Wave
-          horizonColor="#fa00ff"
-          waveColor="#3a2439"
-          crestColor="#c14af2"
-          speed={0.3}
-          amplitude={2.5}
-          waveScale={0.6}
-          waveRatio={0.8}
-          swell={20}
-          turbulence={20}
-          tilt={1.1}
-          zoom={1}
-          height={5.5}
-          fogDepth={15}
-          detail="high"
-          brightness={1}
-          opacity={1}
-          mouseInteraction={false}
-          parallaxStrength={0.5}
-          grain
-          grainIntensity={0.05}
-        />
-      </div>
-    </>
+    <div className="absolute top-0 w-full h-full -z-50">
+      <Wave
+        horizonColor="#fa00ff"
+        waveColor="#3a2439"
+        crestColor="#c14af2"
+        speed={0.3}
+        amplitude={2.5}
+        waveScale={0.6}
+        waveRatio={0.8}
+        swell={20}
+        turbulence={20}
+        tilt={1.1}
+        zoom={1}
+        height={5.5}
+        fogDepth={15}
+        detail="high"
+        brightness={1}
+        opacity={1}
+        mouseInteraction={false}
+        parallaxStrength={0.5}
+        grain
+        grainIntensity={0.05}
+      />
+    </div>
   );
 };
 
@@ -65,20 +63,32 @@ const Background = () => {
   const { isDarkMode, _ } = useContext(ThemeContext);
   const lightBarColors = {
     top: "bg-base-100",
-    bottom: "bg-[#be96dc]"
-  }
+    bottom: "bg-[#be96dc]",
+  };
   const darkBarColors = {
     top: "bg-[#1e143c]",
-    bottom: "bg-black"
-  }
+    bottom: "bg-black",
+  };
 
   return (
     <div>
-      <div className={cn("pointer-events-none fixed left-1/2 -translate-x-1/2 z-100 top-1 w-[89%] h-2.75 block mask-r-from-transparent mask-r-to-transparent", isDarkMode ? darkBarColors.top : lightBarColors.top)} aria-hidden={true}/>
-        <div className="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
-          {isDarkMode ? <DarkModeBackground /> : <LightModeBackground />}
-        </div>
-      <div className={cn("pointer-events-none fixed left-1/2 -translate-x-1/2 z-100 bottom-0.75 w-[89%] h-2.75 block mask-r-from-transparent mask-r-to-transparent", isDarkMode ? darkBarColors.bottom : lightBarColors.bottom)} aria-hidden={true}/>
+      <div
+        className={cn(
+          "pointer-events-none fixed left-1/2 -translate-x-1/2 z-100 top-1 w-[89%] h-2.75 block mask-r-from-transparent mask-r-to-transparent",
+          isDarkMode ? darkBarColors.top : lightBarColors.top,
+        )}
+        aria-hidden={true}
+      />
+      <div className="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
+        {isDarkMode ? <DarkModeBackground /> : <LightModeBackground />}
+      </div>
+      <div
+        className={cn(
+          "pointer-events-none fixed left-1/2 -translate-x-1/2 z-100 bottom-0.75 w-[89%] h-2.75 block mask-r-from-transparent mask-r-to-transparent",
+          isDarkMode ? darkBarColors.bottom : lightBarColors.bottom,
+        )}
+        aria-hidden={true}
+      />
     </div>
   );
 };

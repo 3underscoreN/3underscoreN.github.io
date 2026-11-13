@@ -15,10 +15,10 @@ export default function Blog() {
       <ul className="list rounded-box gap-4">
         {allPosts
           .sort((a, b) => new Date(b.date) - new Date(a.date))
-          .map((post, index) => (
+          .map((post, _) => (
             <Link
               href={`/blog/${encodeURI(post._meta.fileName.replace(/\.mdx?$/, ""))}`}
-              key={index}
+              key={post._meta.fileName}
               className="rounded-box bg-base-200 hover:bg-base-300 transition-colors duration-200 shadow-md"
             >
               <li className="list-item p-4">

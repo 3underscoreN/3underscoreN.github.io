@@ -28,14 +28,17 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <ViewTransitions>
-      <html lang="en" className={`${montserrat.className} h-full`} data-theme="dark-custom">
+      <html
+        lang="en"
+        className={`${montserrat.className} h-full`}
+        data-theme="dark-custom"
+        data-scroll-behavior="smooth"
+      >
         <Head>
           <title>3_n</title>
         </Head>
         <body className="min-h-full overflow-x-hidden md:pb-8">
-          <ThemeProvider>
-            {children}
-          </ThemeProvider>
+          <ThemeProvider>{children}</ThemeProvider>
         </body>
       </html>
     </ViewTransitions>
