@@ -42,10 +42,14 @@ const Navbar = () => {
           <ul className="block md:hidden gap-x-6">
             <li>
               <div className="dropdown dropdown-end">
-                <div className="btn rounded-4xl">
+                {/* biome-ignore lint/a11y/noNoninteractiveTabindex: Interactable button */}
+                <div tabIndex={0} className="btn rounded-4xl">
                   <FontAwesomeIcon icon={faListUl} />
                 </div>
-                <ul className="menu dropdown-content bg-base-100 rounded-box w-52 p-2 shadow-xl">
+                <ul
+                  tabIndex={-1}
+                  className="menu dropdown-content bg-base-100 rounded-box w-52 p-2 shadow-xl"
+                >
                   <li>
                     <Link href="/aboutme">
                       <div className="flex justify-center place-items-center min-h-[3rem]">
