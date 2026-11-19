@@ -13,17 +13,15 @@ export function Card({ title, badges, description, imageUrl, actions }) {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <div className="flex gap-2">
+        <div className="flex gap-2 max-w-full flex-wrap">
           {badges.map((badge, index) => (
             <div
               // biome-ignore lint/suspicious/noArrayIndexKey: The badges array is static and not expected to change, so using the index as a key is acceptable in this case.
               key={index}
               className={cn(
-                `badge badge-outline`,
-                badge.color === "primary" && "badge-primary",
-                badge.color === "secondary" && "badge-secondary",
-                badge.color === "accent" && "badge-accent",
-                badge.color === "warning" && "badge-warning",
+                "badge",
+                badge.color ? `badge-${badge.color}` : null,
+                badge.style ? `badge-${badge.style}` : "badge-outline",
               )}
             >
               {badge.text}

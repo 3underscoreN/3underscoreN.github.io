@@ -65,7 +65,7 @@ const AboutMe = () => {
                         description="A discord bot written in Python to play music in voice channels."
                         actions={[
                           {
-                            text: "View repository",
+                            text: "Repo",
                             url: "https://github.com/3underscoreN/3_n-s-slash-Music-Bot",
                             isExternal: true,
                             tooltip: "View on GitHub",
@@ -82,7 +82,7 @@ const AboutMe = () => {
                         description="My first personal website that served as my portfolio (with sub-optimal performance)."
                         actions={[
                           {
-                            text: "Open",
+                            text: "Visit",
                             url: "/version_1/index.html",
                             isExternal: false,
                             tooltip: "Visit the old version",
@@ -99,7 +99,7 @@ const AboutMe = () => {
                         description="This is the website you're looking at right now!"
                         actions={[
                           {
-                            text: "View repository",
+                            text: "Repo",
                             url: "https://github.com/3underscoreN/3underscoreN.github.io",
                             isExternal: true,
                             tooltip: "View on GitHub",
@@ -118,13 +118,13 @@ const AboutMe = () => {
                         simple full-stack application."
                         actions={[
                           {
-                            text: "Open",
+                            text: "Visit",
                             url: "https://thevale.top",
                             isExternal: true,
                             tooltip: "Visit The Vale",
                           },
                           {
-                            text: "View repository",
+                            text: "Repo",
                             url: "https://github.com/3underscoreN/theVale",
                             isExternal: true,
                             tooltip: "View on GitHub",
@@ -138,6 +138,7 @@ const AboutMe = () => {
                           { text: "React", color: "primary" },
                           { text: "Next.js", color: "primary" },
                           { text: "Python", color: "primary" },
+                          { text: "Docker", color: "primary" },
                         ]}
                         description="A simple integration of nextjs and
                         discord bot to make managing boostday
@@ -145,7 +146,7 @@ const AboutMe = () => {
                         "
                         actions={[
                           {
-                            text: "View repository",
+                            text: "Repo",
                             url: "https://github.com/3underscoreN/IKUSANON-Joint-Compose",
                             isExternal: true,
                             tooltip: "View on GitHub",
