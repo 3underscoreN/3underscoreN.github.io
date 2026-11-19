@@ -20,7 +20,8 @@ export function Card({ title, badges, description, imageUrl, actions }) {
               key={index}
               className={cn(
                 "badge",
-                badge.color ? `badge-${badge.color}` : null,
+                badge.color === "primary" && "badge-primary",
+                badge.color === "warning" && "badge-warning",
                 badge.style ? `badge-${badge.style}` : "badge-outline",
               )}
             >
